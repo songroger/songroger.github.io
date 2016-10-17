@@ -2,6 +2,8 @@
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://songroger.github.io/" # the base hostname & protocol for your site
 permalink: /:title/
+avatar: http://7xof48.com1.z0.glb.clouddn.com/avatar.jpg
+about: http://7xof48.com1.z0.glb.clouddn.com/about.jpg
 
 # Theme specific configuration
 title: songroger
@@ -46,5 +48,5 @@ kramdown:
 gems: ['jekyll-paginate']
 
 # Pagination
-paginate: 1
+paginate: 3
 paginate_path: /page:num
