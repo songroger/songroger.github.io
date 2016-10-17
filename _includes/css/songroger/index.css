@@ -37,5 +37,6 @@ a:hover, a:visited, a:active {
 
 /* line 38, ../../../_sass/songroger/index.scss */
 .footer .col {
+  font-size: 13px;
   text-align: center;
 }
