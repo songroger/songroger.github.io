@@ -12,7 +12,6 @@ Suitable for shortform, longform, and probably even waveform. It is purpose-buil
 
 <div class="post-image post-image--split">
     <img src="http://placehold.it/365x270/8e8387/ffffff" alt="The first in an example of split-imagery" />
-    <img src="http://placehold.it/365x270/8e8387/ffffff" alt="The second in an example of split-imagery" />
 </div>
 
 <div class="post-image">
