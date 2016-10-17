@@ -2,6 +2,11 @@
 // @Date: Aug.24.2016
 @import "compass/css3.scss";
 
+a:hover, a:visited, a:active {
+	color: #444;
+    text-decoration: none;
+}
+
 .article__more {
 	color:#999;
     &:hover {
