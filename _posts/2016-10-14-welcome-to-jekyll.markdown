@@ -4,8 +4,7 @@ title:  "hello!"
 date:   2016-10-12 17:13:17 +0800
 categories: update
 ---
-
-[『Cmd 技术渲染的沙箱页面，点击此处编写自己的文档』](https://zybuluo.com/mdeditor "作业部落旗下 Cmd 在线 Markdown 编辑阅读器")
+Markdown 简明语法手册
 
 # Cmd Markdown 简明语法手册
 
