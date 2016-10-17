@@ -3,14 +3,17 @@
 @import "compass/css3.scss";
 
 .article__more {
+	color:#999;
     &:hover {
+      color: #444;
       text-decoration: none;
     }
 }
 
 .subscribe {
-	color:#444;
+	color:#999;
     &:hover {
+      color: #444;
       text-decoration: none;
     }
 }

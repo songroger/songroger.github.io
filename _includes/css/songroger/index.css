@@ -1,29 +1,35 @@
-/* line 6, ../../../_sass/songroger/index.scss */
+/* line 5, ../../../_sass/songroger/index.scss */
+.article__more {
+  color: #999;
+}
+/* line 7, ../../../_sass/songroger/index.scss */
 .article__more:hover {
-  text-decoration: none;
-}
-
-/* line 11, ../../../_sass/songroger/index.scss */
-.subscribe {
   color: #444;
-}
-/* line 13, ../../../_sass/songroger/index.scss */
-.subscribe:hover {
   text-decoration: none;
 }
 
-/* line 18, ../../../_sass/songroger/index.scss */
+/* line 13, ../../../_sass/songroger/index.scss */
+.subscribe {
+  color: #999;
+}
+/* line 15, ../../../_sass/songroger/index.scss */
+.subscribe:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+/* line 21, ../../../_sass/songroger/index.scss */
 .blocks {
   display: flex;
   margin-bottom: 0;
 }
 
-/* line 24, ../../../_sass/songroger/index.scss */
+/* line 27, ../../../_sass/songroger/index.scss */
 .block__item .btn {
   box-shadow: inset 0 0 0 0px #1565c0;
 }
 
-/* line 30, ../../../_sass/songroger/index.scss */
+/* line 33, ../../../_sass/songroger/index.scss */
 .footer .col {
   text-align: center;
 }

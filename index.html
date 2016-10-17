@@ -17,12 +17,12 @@ layout: default
 
     <nav class="blocks blocks--space">
       <div class="blocks__item">
-        {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}" class="btn">Previous</a>{% endif %}
+        {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}" style="color:#999;box-shadow:inset 0 0 0 0px #1565c0;" class="pagi">Previous</a>{% endif %}
       </div>
       <div class="blocks__item">
         Page: {{ paginator.page }} of {{ paginator.total_pages }}
       </div>
       <div class="blocks__item">
-        {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" class="btn">Next</a>{% endif %}
+        {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" style="color:#999;box-shadow:inset 0 0 0 0px #1565c0" class="pagi">Next</a>{% endif %}
       </div>
     </nav>
