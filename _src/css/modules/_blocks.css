@@ -1,0 +1,13 @@
+.blocks {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.blocks--space {
+  justify-content: space-between;
+}
+
+.block__item--mr {
+  margin-right: .8rem;
+}

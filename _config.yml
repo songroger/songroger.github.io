@@ -1,26 +1,49 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Site configuration
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://pawelgrzybek.com" # the base hostname & protocol for your site
+permalink: /:title/
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: songroger
-email: songroger@vip.qq.com
+# Theme specific configuration
+title: pawelgrzybek.com
+description: >
+  Hi there, I'm Pawel Grzybek, Front-end Developer from Poland.
+  Nowadays I live in Northampton (UK). When I'm not coding,
+  I'm spinning funky vinyl records.
+# Contact and social media links
+twitter_username: pawelgrzybek
+github_username: pawelgrzybek
+facebook_username: grzybecki
+instagram_username: pawelgrzybek
+linkedin_username: pgrzybek
 
-# Build settings
-markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+exclude: ['node_modules', 'gulpfile.js', 'package.json']
+
+# defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+kramdown:
+  input: GFM
+
+gems: ['jekyll-paginate']
+
+# Pagination
+paginate: 10
+paginate_path: /page:num

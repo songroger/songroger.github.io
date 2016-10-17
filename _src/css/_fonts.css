@@ -1,0 +1,39 @@
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
+    url('../assets/sspr.woff2') format('woff2'),
+    url('../assets/sspr.woff') format('woff');
+}
+
+/* source-sans-pro-italic - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'),
+    url('../assets/sspi.woff2') format('woff2'),
+    url('../assets/sspi.woff') format('woff');
+}
+
+/* source-sans-pro-700 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+    url('../assets/sspb.woff2') format('woff2'),
+    url('../assets/sspb.woff') format('woff');
+}
+
+/* source-code-pro-regular - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'),
+    url('../assets/scr.woff2') format('woff2'),
+    url('../assets/scr.woff') format('woff');
+}

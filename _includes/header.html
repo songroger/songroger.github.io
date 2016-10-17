@@ -1,5 +1,23 @@
-<header role="banner">
-    <a href="/" id="banner" title="{{ site.title }}">
-        <h1>{{ site.title }}</h1>
-    </a>
-</header>
+  <header class="header">
+
+    {% if page.title %}
+      <div class="header__logo">
+        <a href="{{ site.baseurl }}/" class="header__link header__link--logo" title="{{ site.title }}">{{ site.title }}</a>
+      </div>
+    {% else %}
+      <h1 class="header__logo">
+        <a href="{{ site.baseurl }}/" class="header__link header__link--logo" title="{{ site.title }}">{{ site.title }}</a>
+      </h1>
+    {% endif %}
+
+    <nav class="header__nav" role="navigation">
+      <a href="{{ site.baseurl }}/about/" class="header__link" title="About">About</a>
+      <a href="{{ site.baseurl }}/archive/" class="header__link" title="Archive">Archive</a>
+      <a href="http://twitter.com/{{ site.twitter_username }}" class="header__link" title="Paweł Grzybek on Twitter" target="_blank">Twitter</a>
+      <a href="http://github.com/{{ site.github_username }}" class="header__link" title="Paweł Grzybek on Github" target="_blank">Github</a>
+      <a href="http://facebook.com/{{ site.facebook_username }}" class="header__link" title="Paweł Grzybek on Facebook" target="_blank">Facebook</a>
+      <a href="http://instagram.com/{{ site.instagram_username }}" class="header__link" title="Paweł Grzybek on Instagram" target="_blank">Instagram</a>
+    </nav>
+  </header>
+
+  <main class="col">
