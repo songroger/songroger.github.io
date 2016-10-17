@@ -3,7 +3,22 @@
   text-decoration: none;
 }
 
-/* line 12, ../../../_sass/songroger/index.scss */
+/* line 11, ../../../_sass/songroger/index.scss */
+.subscribe {
+  color: #444;
+}
+/* line 13, ../../../_sass/songroger/index.scss */
 .subscribe:hover {
   text-decoration: none;
+}
+
+/* line 18, ../../../_sass/songroger/index.scss */
+.blocks {
+  display: flex;
+  margin-bottom: 0;
+}
+
+/* line 24, ../../../_sass/songroger/index.scss */
+.block__item .btn {
+  box-shadow: inset 0 0 0 0px #1565c0;
 }

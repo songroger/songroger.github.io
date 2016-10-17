@@ -9,7 +9,19 @@
 }
 
 .subscribe {
+	color:#444;
     &:hover {
       text-decoration: none;
     }
+}
+
+.blocks {
+	display: flex;
+	margin-bottom:0;
+}
+
+.block__item {
+	.btn {
+		box-shadow:inset 0 0 0 0px #1565c0;
+	}
 }
