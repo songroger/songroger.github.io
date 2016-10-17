@@ -1,20 +1,21 @@
 # Site configuration
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://pawelgrzybek.com" # the base hostname & protocol for your site
+url: "http://songroger.github.io/" # the base hostname & protocol for your site
 permalink: /:title/
 
 # Theme specific configuration
-title: pawelgrzybek.com
+title: songroger
 description: >
-  Hi there, I'm Pawel Grzybek, Front-end Developer from Poland.
-  Nowadays I live in Northampton (UK). When I'm not coding,
-  I'm spinning funky vinyl records.
+  Hi there, My name is Luozhan.Song, usually I use "songroger" as my ID everywhere.
+  I was born and raised in Hunan China. 
+  I'm really fond of beautiful design, drawing etc.
+
 # Contact and social media links
-twitter_username: pawelgrzybek
-github_username: pawelgrzybek
-facebook_username: grzybecki
-instagram_username: pawelgrzybek
-linkedin_username: pgrzybek
+twitter_username: songrogero
+github_username: songroger
+facebook_username: song.roger.1
+instagram_username: songroger198
+linkedin_username: songroger
 
 exclude: ['node_modules', 'gulpfile.js', 'package.json']
 
