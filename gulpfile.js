@@ -28,7 +28,7 @@ gulp.task('browser-sync', ['styles', 'jekyll'], () => {
       forms: false,
       scroll: true
     },
-    logPrefix: 'pawelgrzybek.com',
+    logPrefix: 'songroger',
     notify: false,
     server: {
       baseDir: '_site'

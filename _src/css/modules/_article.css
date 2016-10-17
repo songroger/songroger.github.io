@@ -25,3 +25,7 @@
   margin-bottom: .8rem;
   font-size: .7501rem;
 }
+
+.article__more {
+  text-decoration:none;
+}
