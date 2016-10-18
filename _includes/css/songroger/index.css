@@ -41,16 +41,22 @@ a:hover, a:visited, a:active {
 }
 
 /* line 41, ../../../_sass/songroger/index.scss */
+.post-tags {
+  text-align: right;
+  font: italic bold 12px/30px Georgia, serif;
+}
+
+/* line 46, ../../../_sass/songroger/index.scss */
 .footer {
   margin-top: 0.5rem;
 }
-/* line 43, ../../../_sass/songroger/index.scss */
+/* line 48, ../../../_sass/songroger/index.scss */
 .footer .col {
   font-size: 13px;
   text-align: center;
 }
 
-/* line 50, ../../../_sass/songroger/index.scss */
+/* line 55, ../../../_sass/songroger/index.scss */
 .btn__icon:hover {
   fill: #1565c0;
 }
