@@ -47,7 +47,7 @@ gulp.task('styles', () => {
   return gulp.src('_src/css/main.css')
     .pipe(postcss(processors))
     .pipe(nano())
-    .pipe(gulp.dest('_includes'));
+    .pipe(gulp.dest('_includes/css'));
 });
 
 // Watch sass and all html posts
@@ -57,4 +57,4 @@ gulp.task('watch', () => {
 });
 
 // default task
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['styles', 'watch']);
