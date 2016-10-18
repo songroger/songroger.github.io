@@ -49,3 +49,8 @@ a:hover, a:visited, a:active {
   font-size: 13px;
   text-align: center;
 }
+
+/* line 50, ../../../_sass/songroger/index.scss */
+.btn__icon:hover {
+  fill: #1565c0;
+}

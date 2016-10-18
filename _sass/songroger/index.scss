@@ -45,3 +45,9 @@ a:hover, a:visited, a:active {
 		text-align: center;
 	}
 }
+
+.btn__icon {
+	&:hover {
+      fill: #1565c0;
+    }
+}
