@@ -15,7 +15,6 @@ During that time, dozens of tech-blogs were born , like flowers were blooming in
 But lately, micro blog (mainly Weibo and Wechat) appears, less and less guys keep on updating his blog. We began to get used to the style of micro blog(aka 'weibo ti'). I closed my lofter and other sys too. 
 Until now, WeChat is my main social app for China. Actually WeChat can satisfy your most demands as a social app or RSS(WeChat public) and integrated services. But to record your living moments and your own words. I don't think any other one can cheer you up, except building. 
 Maybe as Frank said :
-
 ![Frank](http://7xof48.com1.z0.glb.clouddn.com/reopenblog.png)
 
 I'm glad that I was in the third stage. So this might last for a long period of time lately. 
