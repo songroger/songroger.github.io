@@ -7,7 +7,7 @@ cover: "https://ocpk3ohd2.qnssl.com/uploads/image/file/84/23/84236538ea2215f972d
 ---
 ---
 「Why I rebuild a blog?」
-Years ago, web appeared in my life(I mean I began to be a bug mechanic). That's a prime time for blogs, almost every big internet company owns its platform. E.g. Sina blog;lofter of NetEase etc. 
+Years ago, web appeared in my life(I mean I began to be a bug mechanic). That's a prime time for blogs, almost every big internet company owns its platform. E.g. Sina blog; lofter of NetEase; CSDN; Sohu blog etc. 
 As a web developer, building his own site would have been a cooler thing. So I wrote a blog in PHP. That's my first own work, really a start of my blogging. 
 
 During that time, dozens of tech-blogs were born , like flowers were blooming in the spring. You can get almost everything you want to know about all the coding languages from words of blogs(of course, you must learn to visit google first ,if you are in China). 
