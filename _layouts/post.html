@@ -5,6 +5,11 @@ layout: default
 <article class="article">
   <h1 class="article__title article__title--single">{{ page.title }}</h1>
   <time class="article__date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{% if page.author %}By {{ page.author}} on {% endif %}{{ page.date | date: "%b %-d, %Y" }}</time>
+  {% if page.cover %}
+    <div class="cover">
+      <img src="{{ page.cover }}">
+    </div>
+  {% endif %}
   {{ content }}
 </article>
 
