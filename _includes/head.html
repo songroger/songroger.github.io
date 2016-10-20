@@ -27,10 +27,15 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Styles -->
-  <style type="text/css">
-    {% include main.css %}
-    {% include css/songroger/index.css %}
-    {% include css/songroger/gff.css %}
-  </style>
+  {% if site.basecss %}
+    <link rel="stylesheet" href="{{ site.basecss }}">
+  {% else %}
+    <style type="text/css">
+      {% include main.css %}
+      {% include css/songroger/index.css %}
+      {% include css/songroger/gff.css %}
+    </style>
+  {% endif %}
+
 
 </head>
