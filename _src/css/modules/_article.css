@@ -27,5 +27,10 @@
 }
 
 .article__more {
-  text-decoration:none;
+  color: var(--color2);
+  text-decoration: none;
+  &:hover {
+      color: var(--color-text);
+      text-decoration: none;
+    }
 }
