@@ -5,16 +5,18 @@
 .article__title {
   margin-bottom: .8rem;
   font-size: 1.999rem;
-
   &--single {
-    font-size: 2.827rem;
+    font-size: 2rem;
+    font-family: var(--title-font);
   }
 
   a {
     color: var(--color-text);
+    font-family: var(--title-font);
+    transition:all 0.25s ease-in;
 
     &:hover {
-      color: var(--color1);
+      color: var(--color2);
       text-decoration: none;
     }
   }
@@ -39,4 +41,12 @@
   text-align: right;
   text-decoration: none;
   font: italic bold 12px/30px Georgia, serif;
+  a {
+    color: var(--color2);
+
+    &:hover {
+      color: var(--color-text);
+      text-decoration: none;
+    }
+  }
 }
