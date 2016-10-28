@@ -10,6 +10,7 @@
 
 .subscribe {
   color: var(--color2);
+  transition:all 0.25s ease-in;
   &:hover {
       color: var(--color-text);
       text-decoration: none;

@@ -30,6 +30,7 @@ gulp.task('browser-sync', ['styles', 'jekyll'], () => {
     },
     logPrefix: 'songroger',
     notify: false,
+    // port: 4000,
     server: {
       baseDir: '_site'
     }
