@@ -34,3 +34,9 @@
       text-decoration: none;
     }
 }
+
+.post-tags {
+  text-align: right;
+  text-decoration: none;
+  font: italic bold 12px/30px Georgia, serif;
+}

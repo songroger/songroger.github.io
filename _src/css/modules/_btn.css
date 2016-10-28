@@ -26,7 +26,7 @@
   margin-right: .6rem;
   transition: fill 100ms;
   &:hover {
-      color: var(--color1);
+      fill: var(--color1);
     }
 }
 
