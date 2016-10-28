@@ -32,11 +32,11 @@
 
 .header__link {
   padding: .8rem;
-  transition: all 100ms;
   color: var(--color-text);
   text-decoration: none;
-
-  &:hover,
+  border-bottom: 2px solid transparent;
+  padding-bottom: 1px;
+  /*&:hover,
   &:focus {
     outline: 0;
     background: var(--color1);
@@ -46,9 +46,25 @@
     .header__icon {
       fill: #fff;
     }
+  }*/
+  &:hover{
+    transition: all .5s ease-in;
+    border-color:rgba(183, 180, 176, 0.7);
   }
 }
 
 .header__link--logo {
+  padding: .8rem;
   display: block;
+  text-transform: uppercase;
+}
+
+.header__logo {
+  img {
+    display:initial;
+    width:30px;
+    height:30px;
+    vertical-align:middle;
+    border-radius:15px;
+  }
 }
