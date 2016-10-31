@@ -2,12 +2,13 @@
 
     {% if site.avatar %}
       <div class="header__logo">
-        <a href="{{ site.baseurl }}/" class="header__link header__link--logo" title="{{ site.title }}">
-        <img src="{{ site.avatar }}" style="display:initial;width:30px;height:30px;vertical-align:middle;border-radius:15px;"></a>
+        <a href="{{ site.baseurl }}/" class="header__link--logo">
+        <!-- <div class="spinner"></div> -->
+        <img src="{{ site.avatar }}"></a>
       </div>
     {% else %}
       <h1 class="header__logo">
-        <a href="{{ site.baseurl }}/" class="header__link header__link--logo" title="{{ site.title }}">{{ site.title }}</a>
+        <a href="{{ site.baseurl }}/" class="header__link--logo">{{ site.title }}</a>
       </h1>
     {% endif %}
 
