@@ -50,4 +50,4 @@ gems: ['jekyll-paginate']
 
 # Pagination
 paginate: 3
-paginate_path: /page:num
+paginate_path: /archive/page:num
