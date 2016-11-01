@@ -49,5 +49,5 @@ kramdown:
 gems: ['jekyll-paginate']
 
 # Pagination
-paginate: 3
+paginate: 5
 paginate_path: /archive/page:num
