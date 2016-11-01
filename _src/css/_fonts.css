@@ -4,8 +4,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
-    url('../assets/sspr.woff2') format('woff2'),
-    url('../assets/sspr.woff') format('woff');
+    url('/assets/sspr.woff2') format('woff2'),
+    url('/assets/sspr.woff') format('woff');
 }
 
 /* source-sans-pro-italic - latin */

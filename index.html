@@ -2,7 +2,7 @@
 layout: default
 ---
 
-  {% for post in paginator.posts %}
+  {% for post in site.posts limit:3 %}
     <!-- article -->
     <article class="article">
       <h2 class="article__title">
@@ -15,7 +15,7 @@ layout: default
     <!-- / article -->
   {% endfor %}
 
-    <nav class="blocks blocks--space">
+    <!-- <nav class="blocks blocks--space">
       <div class="blocks__item">
         {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}">Previous</a>{% endif %}
       </div>
@@ -25,4 +25,4 @@ layout: default
       <div class="blocks__item">
         {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}">Next</a>{% endif %}
       </div>
-    </nav>
+    </nav> -->
