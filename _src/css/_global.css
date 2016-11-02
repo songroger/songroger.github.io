@@ -34,7 +34,7 @@
   --color-border: #eee;
   --color1: #1565C0;
   --color2: #999;
-  --title-font: Georgia,"Xin Gothic","PingFang TC","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei",sans-serif;
+  --title-font: 'Lora',Georgia,"Microsoft YaHei",sans-serif;
 }
 
 html {
@@ -68,7 +68,7 @@ html {
 
 body {
   color: var(--color-text);
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lora','Source Sans Pro', sans-serif;
   font-size: 1rem;
   line-height: 1.6rem;
 

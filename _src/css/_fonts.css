@@ -37,3 +37,21 @@
     url('/assets/scr.woff2') format('woff2'),
     url('/assets/scr.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora'), local('Lora-Regular'),
+    url('/assets/Lora-Regular.woff2') format('woff2'),
+    url('/assets/Lora-Regular.woff') format('woff');
+}
+
+/*@font-face {
+  font-family: 'Lora';
+  font-style: bold;
+  font-weight: 400;
+  src: local('Lora'), local('Lora-Bold'),
+    url('/assets/Lora-Bold.woff2') format('woff2'),
+    url('/assets/Lora-Bold.woff') format('woff');
+}*/
