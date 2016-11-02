@@ -47,7 +47,16 @@ gulp.task('styles', () => {
   ];
   return gulp.src('_src/css/main.css')
     .pipe(postcss(processors))
-    .pipe(nano())
+    .pipe(nano({
+          //the following option is for :CSS3 Animation is missing after minify
+          reduceIdents: {
+              keyframes: false
+          },
+          discardUnused: {
+              keyframes: false
+          }
+          })
+    )
     .pipe(gulp.dest('_includes/css'));
 });
 

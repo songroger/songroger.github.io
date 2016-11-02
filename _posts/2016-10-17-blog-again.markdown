@@ -5,6 +5,7 @@ date:   2016-10-17 22:13:17 +0000
 categories: self words
 cover: "https://ocpk3ohd2.qnssl.com/uploads/image/file/84/23/84236538ea2215f972d7d7f4386762bc.jpg"
 tail: "Drafted on the road"
+description: 「Why I rebuild a blog?」
 ---
 ---
 「Why I rebuild a blog?」

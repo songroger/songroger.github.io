@@ -5,6 +5,7 @@ date:   2016-10-19 20:21:17 +0000
 categories: self words
 cover: "https://ocpk3ohd2.qnssl.com/uploads/image/file/5f/6e/5f6e68393d76505bd99e77cd8f0a9176.jpg"
 tail: <a href="https://24ways.org/2015/what-i-learned-about-product-design-this-year/" class="post-tags">[From 24ways.org]</a>
+description: This article is from Meagan Fisher. She is passionate about owls, coffee, and web design. In her ongoing mission to make the web a better place, she’s partnered with some of the best designers in the industry, such as SimpleBits, Happy Cog, and Crush + Lovely. When she’s not creating interfaces, she’s speaking, tweeting, writing on Owltastic, or posting coffee art photography to Art in my Coffee.
 ---
 ---
 PRODUCT DESIGN IS VERY DIFFERENT FROM MARKETING DESIGN

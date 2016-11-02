@@ -1,5 +1,6 @@
 .article {
   margin-bottom: 3rem;
+  animation: itemshow 0.9s linear;
 }
 
 .article__title {

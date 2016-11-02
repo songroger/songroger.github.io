@@ -4,10 +4,14 @@ title: Archive
 
 <ul>
   {%for post in paginator.posts %}
-  <article class="article">
-    <li><time>{{ post.date | date:"%Y.%m.%d" }}</time> - <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </article>
+    <div class="arch-item">
+      <li>
+        <a href="{{ post.url }}" class="arch-title">{{ post.title }}</a>
+        <time>{{ post.date | date:"%b.%d, %Y" }}</time>
+      </li>
+      {% if post.description %}<div class="arch-desc">{{ post.description }}</div>{% endif %}
+    </div>
+  {% endfor %}
 </ul>
 
     <nav class="blocks blocks--space">
