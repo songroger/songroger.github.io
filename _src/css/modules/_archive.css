@@ -6,7 +6,7 @@
 .arch-title {
 	color: var(--color-text);
 	font-size: 20px;
-	font-family: Georgia,"Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei",sans-serif;
+	font-family: Georgia,"Hiragino Sans GB","Microsoft YaHei",sans-serif;
 	font-weight: bold;
 	padding-right: 10px;
 	&:hover {
