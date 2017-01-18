@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "A piece of CPU"
+date:   2017-01-18 00:05:14 +0000
+categories: self words
+tail: ""
+description: ""
+---
+---
+處理器的指令集分為2種，CISC（complex instruction set computer）以及RISC（reduced instruction set computer）。
+CISC是指采用一整套计算机指令进行操作的计算机。而后又出现了精简指令集计算机，它精简了指令集，只保留了那些常用的指令，这样计算机能以更快的速度执行操作。
+
+
+1）ARM/MIPS/PowerPC均是基于RISC处理器的架构；
+2）X86则是基于CISC，Atom是x86或者是x86指令集的精简版。
+
+其中，x86主要是在pc独领风骚。ARM在智能手机、平板等便携式领域上一枝独秀。在1000MHz以上的应用，很难找到采用ARM架构的产品。MIPS主要在住宅网关、线缆调制解调器、线缆机顶盒等。MIPS架构用在200MHz或者是266MHz以下的应用比较少，而这恰恰是ARM的主攻市场。
+
+随着不断的发展，内部微架构开始趋同。如intel的x86现在是CISC的壳RISC的核。
+
+
+推荐阅读：
+David Money Harris《数字设计和计算机体系结构》
+David A.Patterson 《计算机组成与设计》
+John L. Hennessy & David A. Patterson《Computer Architecture：A Quantitative Approach Fifth Edition》
