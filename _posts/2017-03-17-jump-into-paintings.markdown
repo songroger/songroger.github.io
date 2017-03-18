@@ -4,7 +4,7 @@ title:  "关于赏画"
 date:   2017-03-17 10:52:14 +0000
 categories: self words
 tail: <a href="http://www.nationalgallery.org.uk/paintings/explore-the-paintings/30-highlight-paintings">来看看[National-gallery]</a>
-description:
+description: "看姑娘是姑娘，看姑娘不是姑娘，看姑娘还是姑娘"
 ---
 很遗憾地说，我国的美育真的不合格。对于大多数人来说，当然包括我，每次去museum或者艺术走廊绝对都是走马观花，不懂如何欣赏一幅画作。
 

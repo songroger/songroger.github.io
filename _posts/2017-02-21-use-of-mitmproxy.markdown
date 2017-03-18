@@ -4,7 +4,7 @@ title:  "Regular use of Mitmproxy"
 date:   2017-02-21 12:15:14 +0000
 categories: self words
 tail: <a href="http://docs.mitmproxy.org/en/v0.17/mitmproxy.html#example-interception">[More]</a>
-description:
+description: 'Knowning about this is enough'
 ---
 ### Install the certificate
 Just start mitmproxy and configure your target device with the correct proxy settings. Now start a browser on the device, and visit the magic domain **[mitm.it](http://mitm.it)**. 
