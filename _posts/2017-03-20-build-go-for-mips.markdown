@@ -6,7 +6,7 @@ categories: self words
 tail: 
 description: 
 ---
-### 起因：
+#### 起因：
 
 手上有个1代极路由，mips的cpu.
 ```
