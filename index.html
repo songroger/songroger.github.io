@@ -13,7 +13,7 @@ layout: default
           {% if post.description %}
             {{ post.description }}
           {% else %}
-            No description now, try to click 'Read more'
+            No description now.
           {% endif %}
       </p>
       <a href="{{ post.url | prepend: site.baseurl }}" class="article__more">Read more »</a>
