@@ -64,7 +64,7 @@ layout: default
         },
         xhr.ontimeout = function() {
             e(),
-            n.abort()
+            xhr.abort()
         },
         xhr.onerror = function() {
             e()
