@@ -19,7 +19,7 @@
     border: 3px solid rgba(0,0,0,0.1);
     border-radius: 20px;
     padding: 1px 15px;
-    font-family: Georgia,"Microsoft YaHei",sans-serif;
+    font-family: Georgia,sans-serif;
     &:hover {
       color: var(--color-text);
       border-color: var(--color2);

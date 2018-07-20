@@ -19,7 +19,7 @@ title: Archive
         {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}">Previous</a>{% endif %}
       </div>
       <div class="blocks__item">
-        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+        {{ paginator.page }}►{{ paginator.total_pages }}
       </div>
       <div class="blocks__item">
         {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}">Next</a>{% endif %}

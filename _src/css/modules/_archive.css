@@ -6,7 +6,7 @@
 .arch-title {
 	color: var(--color-text);
 	font-size: 20px;
-	font-family: Georgia,"Hiragino Sans GB","Microsoft YaHei",sans-serif;
+	font-family: Lora,Georgia,"Hiragino Sans GB",sans-serif;
 	font-weight: bold;
 	padding-right: 10px;
 	&:hover {
@@ -18,7 +18,7 @@
 time {
 	color: var(--color2);
 	font-size: 15px;
-	font-family: Optima,"Helvetica Neue",sans-serif;
+	font-family: "Segoe UI",Optima,"Helvetica Neue",sans-serif;
 }
 
 .arch-desc {

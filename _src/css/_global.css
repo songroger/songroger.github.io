@@ -34,7 +34,7 @@
   --color-border: #eee;
   --color1: #1565C0;
   --color2: #999;
-  --title-font: Georgia,"Microsoft YaHei",sans-serif;
+  --title-font: Lora,Georgia,sans-serif;
 }
 
 html {
@@ -68,7 +68,7 @@ html {
 
 body {
   color: var(--color-text);
-  font-family: Georgia,'Source Sans Pro', sans-serif;
+  font-family: Lora,Georgia,'Source Sans Pro', sans-serif;
   font-size: 0.9rem;
   line-height: 1.6rem;
 
