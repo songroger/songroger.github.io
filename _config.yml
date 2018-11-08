@@ -4,7 +4,7 @@ url: "http://songroger.win" # the base hostname & protocol for your site
 permalink: /:title/
 avatar: /photos/avatar.jpg
 about: /photos/about.jpg
-favicon: /assets/favicon.png
+favicon: /assets/favicon.ico
 # basecss: http://7xof48.com1.z0.glb.clouddn.com/songroger/main.min.css
 # Theme specific configuration
 title: songroger
