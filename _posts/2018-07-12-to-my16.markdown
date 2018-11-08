@@ -4,7 +4,7 @@ title:  "写给16岁的自己"
 date:   2018-07-10 23:10:14 +0000
 categories: diary
 keywords: 16, youth
-cover: "http://7xof48.com1.z0.glb.clouddn.com/webwxgetmsgimg.jpg"
+cover: "/img/webwxgetmsgimg.jpg"
 description: 此时此刻，在这个世界上，还有无数的像你一样16岁的少年，他们绝对无法知道在他们人生未来的岁月里将会发生的。
 ---
 
