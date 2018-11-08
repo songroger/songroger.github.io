@@ -19,9 +19,7 @@ Until now, WeChat is my main social app for China. Actually WeChat can satisfy y
 Maybe as Frank said :
 
 > 第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。
-
 > 第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。
-
 > 第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。
 
 I'm glad that I was in the third stage. So this might last for a long period of time lately. 
