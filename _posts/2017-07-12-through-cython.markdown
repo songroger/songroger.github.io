@@ -199,7 +199,7 @@ cpdef py_call_fun(PyFoo foo):
     call_fun(foo._this)
 ```
 可以看到，我们先把要包装导出的 C++ 目标类 CppFoo 和我们刚刚实现的代理类 CppFooProxy 的定义导出到 Cython 中，再构造 Python 类 PyFoo 来包装我们的代理类 CppFooProxy。PyFoo 在内部维护了一个 CppFooProxy 代理类的对象，而 PyFoo.foo() 调用会被转发到代理类的 CppFooProxy::fun() 函数上。当创建 CppFooProxy 对象时，PyFoo 也会将自己通过 self 传入到 CppFooProxy 中。这样一来，PyFoo 与 CppFooProxy 就彼此拥有对方。他们一起合作来完成 C++ 和 Python 这两个世界的连接。
-![cpp](http://7xof48.com1.z0.glb.clouddn.com/cythoncpp-py-classes.svg)
+![cpp](/img/cpp-py-classes.svg)
 
 细心的朋友可能意识到了，上面 foo() 函数调用转发隐藏着一个问题。PyFoo.fun() 会去调用 CppFooProxy::fun()，而 CppFooProxy::fun() 又会去调用 Python 对象中的 fun() 方法，这不是一个死循环吗？ 幸运的是在 has_python_override_method() 中，我们是用 types.MethodType 来做比较，去判定对象是否改写了 fun() 方法。而 types.MethodType 只会匹配纯 Python 方法，它不包含内建函数 (built-in functions)。我们知道，Python 扩展中的方法类型都是属于内建函数类型。这样恰好排除掉了 PyFoo 自己那个属于内建函数的 fun() 方法，从而避免了危险的死循环。
 
