@@ -17,7 +17,12 @@ During that time, dozens of tech-blogs were born , like flowers were blooming in
 But lately, micro blog (mainly Weibo and Wechat) appears, less and less guys keep on updating his blog. We began to get used to the style of micro blog(aka 'weibo ti'). I closed my lofter and other sys too. 
 Until now, WeChat is my main social app for China. Actually WeChat can satisfy your most demands as a social app or RSS(WeChat public) and integrated services. But to record your living moments and your own words. I don't think any other one can cheer you up, except building. 
 Maybe as Frank said :
-![Frank](http://7xof48.com1.z0.glb.clouddn.com/reopenblog.png)
+
+> 第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。
+
+> 第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。
+
+> 第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。
 
 I'm glad that I was in the third stage. So this might last for a long period of time lately. 
 It won't be a full tech-blog. About life, drawing, beautiful design or whatever I pick up, that's it ~
