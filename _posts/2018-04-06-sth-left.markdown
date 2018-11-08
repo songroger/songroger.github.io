@@ -4,7 +4,7 @@ title:  "写在清明"
 date:   2018-04-06 21:20:10 +0000
 categories: diary
 keywords: 清明节
-cover: "http://7xof48.com1.z0.glb.clouddn.com/on_cover17.jpg"
+cover: "/img/sth-left.jpg"
 description: 一切都是最好的安排。
 ---
 
