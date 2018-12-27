@@ -13,6 +13,10 @@ keywords: http-server, mitmproxy, f2e-server
 一个简单的命令行HTTP服务器, 基于nodejs.
     安装：`npm install http-server`
 
+**snipaste**
+
+Snipaste is a simple but powerful snipping tool.
+
 **outline**
 
 来自 Jigsaw 的 Outline.
