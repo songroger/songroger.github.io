@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "一点笔记"
-date:   2019-03-26 13:10:14 +0000
+date:   2019-03-26 13:10:14 +0800
 categories: diary
 keywords: life, youth
 cover: "/img/PaulGauguin.jpg"
