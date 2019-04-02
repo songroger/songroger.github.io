@@ -17,7 +17,7 @@ em {
 
 a {
   background: transparent;
-  color: var(--color1);
+  color: var(--color-text);
   text-decoration: none;
   cursor: pointer;
   word-wrap: break-word;
