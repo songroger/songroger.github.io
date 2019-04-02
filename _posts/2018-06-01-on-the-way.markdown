@@ -5,6 +5,7 @@ date:   2018-06-01 22:40:15 +0000
 categories: diary
 keywords: youth
 cover: "/img/on_cover15.jpg"
+cover_display: True
 description: 你连世界都没观过，你说什么世界观。
 ---
 

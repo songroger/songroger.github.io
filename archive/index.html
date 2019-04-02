@@ -1,6 +1,10 @@
 ---
-title: Archive
+layout: default
 ---
+
+<div class="inner">
+  <h2 class="info_title">Archive</h2>
+</div>
 
 <ul>
   {%for post in paginator.posts %}
@@ -16,7 +20,7 @@ title: Archive
 
     <nav class="blocks blocks--space">
       <div class="blocks__item">
-        {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}">Previous</a>{% endif %}
+        {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}">Prev</a>{% endif %}
       </div>
       <div class="blocks__item">
         {{ paginator.page }}►{{ paginator.total_pages }}

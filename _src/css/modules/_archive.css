@@ -1,6 +1,14 @@
+.inner {
+	padding: 10px 0 10px;
+	border-bottom: 1px solid rgba(0,0,0,.04);
+	margin-bottom: 10px;
+}
 .arch-item {
 	margin-bottom: 10px;
 	animation: itemshow 0.9s linear;
+	li {
+		list-style-type: lower-greek;
+	}
 }
 
 .arch-title {
@@ -19,6 +27,7 @@ time {
 	color: var(--color2);
 	font-size: 15px;
 	font-family: "Segoe UI",Optima,"Helvetica Neue",sans-serif;
+	text-transform: uppercase;
 }
 
 .arch-desc {

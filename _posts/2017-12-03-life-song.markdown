@@ -5,6 +5,7 @@ date:   2017-12-03 21:40:15 +0000
 categories: diary
 keywords: youth
 cover: "/img/on_cover6.jpg"
+cover_display: True
 description: 无力改变世界，愿世界更美好。
 ---
 

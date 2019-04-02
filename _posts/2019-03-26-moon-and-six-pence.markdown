@@ -5,6 +5,7 @@ date:   2019-03-26 21:10:14 +0000
 categories: diary
 keywords: life, youth
 cover: "/img/PaulGauguin.jpg"
+cover_display: True
 description: “做自己最想做的事，过自己想过的生活，求得内心安宁，怎么能叫作贱自己？做一个有名的外科医生，一年赚一万英镑，娶一位漂亮的妻子，就是成功？我想，这取决于你如何看待生活的意义。”
 ---
 
