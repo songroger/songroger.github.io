@@ -7,9 +7,6 @@
 .blocks--space {
   justify-content: space-between;
   /*margin-top: 40px;*/
-  .align-right {
-    text-transform: uppercase;
-  }
 }
 
 .block__item--mr {

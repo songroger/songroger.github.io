@@ -95,6 +95,12 @@
   }
 }
 
+.article__align-right {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+}
+
 .article__date {
   display: block;
   margin-bottom: .8rem;
