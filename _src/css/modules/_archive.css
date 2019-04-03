@@ -18,8 +18,15 @@
 	font-weight: bold;
 	padding-right: 10px;
 	&:hover {
-	  color: var(--color2);
-	  transition:all 0.25s ease-in;
+	  /*color: var(--color2);*/
+	  /*transition:all 0.25s ease-in;*/
+	  background: -webkit-gradient(linear,left top,right top,from(#d00606),to(#1c5dc1));
+	  background: linear-gradient(90deg,#d00606,#1c5dc1);
+	  -webkit-text-fill-color:transparent;
+	  text-shadow:none;
+	  -webkit-background-clip:text;
+	  -webkit-box-decoration-break:clone;
+	  box-decoration-break:clone;
 	}
 }
 

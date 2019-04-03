@@ -99,6 +99,15 @@
   display: flex;
   justify-content: flex-end;
   text-transform: uppercase;
+  &:hover {
+    background: -webkit-gradient(linear,left top,right top,from(#d00606),to(#1c5dc1));
+    background: linear-gradient(0deg,#d00606,#1c5dc1);
+    -webkit-text-fill-color:transparent;
+    text-shadow:none;
+    -webkit-background-clip:text;
+    -webkit-box-decoration-break:clone;
+    box-decoration-break:clone;
+  }
 }
 
 .article__date {
