@@ -16,7 +16,7 @@
     opacity: 1;
   }
 }
-@-o-keyframes 'itemshow' {
+@-moz-keyframes 'itemshow' {
   0% {
     top: -60px;
     opacity: 0;
