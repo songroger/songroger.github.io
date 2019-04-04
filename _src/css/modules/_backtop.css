@@ -1,60 +1,60 @@
-.divcss5_list_title{background:#eeeeee; border:1px solid #cccccc; padding:1em;}
-.divcss5_list_content{padding:1em;}
-#tinybox{position:absolute; display:none; padding:10px; background:#ffffff url("/static/img/loading.gif") no-repeat 50% 50%; border:10px solid #e3e3e3; z-index:2000;}
-#tinymask{position:absolute; display:none; top:0; left:0; height:100%; width:100%; background:#000000; z-index:1500;}
-#tinycontent{background:#ffffff; font-size:1.1em;}
-
-#n{margin:10px auto; width:920px; border:1px solid #CCC;font-size:12px; line-height:30px;}
-#n a{ padding:0 4px; color:#333}
-
-p#back-to-top{  
-    position:fixed;
-    z-index:99;
-    display:none;  
-    bottom:20px;  
-    right:50px;  
-}  
-p#back-to-top a{  
-    /*text-align:center;  */
-    text-decoration:none;  
-    color:black;  
-    display:block;  
-    width:40px;  
-    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/  
-    -moz-transition:color 1s;  
-    -webkit-transition:color 1s;  
-    -o-transition:color 1s;  
-}  
-p#back-to-top a:hover{  
-    color:#979797;  
-}  
-p#back-to-top a span{  
-    /*background:transparent url(/static/img/top.gif) no-repeat -25px -290px;  */
-    /*z-index:999;*/
-    /*background: white;*/
-    /*border-radius:6px;  */
-    display:block;  
-    height:10px;  
-    width:15px;  
-    margin-bottom:5px;  
-    /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/  
-    -moz-transition:background 1s;  
-    -webkit-transition:background 1s;  
-    -o-transition:background 1s;  
+p#back-to-top {
+    position: fixed;
+    z-index: 99;
+    display: none;
+    bottom: 20px;
+    right: 20px;
 }
- 
-#back-to-top a:hover span{  
+
+p#back-to-top a {
+
+    /*text-align:center;  */
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 40px;
+    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+    -moz-transition: color 1s;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
+}
+
+p#back-to-top a:hover {
+    color: #979797;
+}
+
+p#back-to-top a span {
+
+    /*background:transparent url(/static/img/top.gif) no-repeat -25px -290px;  */
+
+    /*z-index:999;*/
+
+    /*background: white;*/
+
+    /*border-radius:6px;  */
+    display: block;
+    height: 10px;
+    width: 15px;
+    margin-bottom: 5px;
+    /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+    -moz-transition: background 1s;
+    -webkit-transition: background 1s;
+    -o-transition: background 1s;
+}
+
+#back-to-top a:hover span {
+
     /*background:transparent url(/static/img/top.gif) no-repeat -25px -290px;  */
     background: white;
 }
 
-p#back-to-top a img{
-    position:relative;
-    z-index:99;
-    display:block;  
-    margin-bottom:5px;  
-    /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/  
-    -moz-transition:background 1s;  
-    -webkit-transition:background 1s;  
-    -o-transition:background 1s;  
+p#back-to-top a img {
+    position: relative;
+    z-index: 99;
+    display: block;
+    margin-bottom: 5px;    
+    /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+    -moz-transition: background 1s;
+    -webkit-transition: background 1s;
+    -o-transition: background 1s;
 }

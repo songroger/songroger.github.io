@@ -35,9 +35,43 @@ layout: default
   </div>
 </div>
 <hr>
-<p id="back-to-top"><a href="#top"><img src="/img/top.png"/></a></p>
-<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
-<script src="/js/top.js"></script>
+<p id="back-to-top"><a href="#"><img src="/img/top.png"/></a></p>
+<!-- <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script> -->
+<!-- <script src="/js/top.js"></script> -->
+<script type="text/javascript">
+var my_header = document.getElementById('header-id'),
+    scroll_to_top = document.getElementById('back-to-top');
+
+window.onscroll = function(ev) {
+    var  scrollTop = window.pageYOffset || document.body.scrollTop;
+    if (scrollTop > my_header.offsetHeight + 100) {
+
+        scroll_to_top.style.display = 'block';
+    }
+    else{
+        scroll_to_top.style.display = 'none';
+    }
+};
+
+scroll_to_top.onclick = function () {
+    scrollTo(document.body, 0, 100);
+};
+
+/*
+ *  scroll to body top
+ *  element, position and time duration
+ */
+function scrollTo(element, to, duration) {
+        if (duration < 0) return;
+        var difference = to - element.scrollTop;
+        var perTick = difference / duration * 2;
+
+    setTimeout(function() {
+        element.scrollTop = element.scrollTop + perTick;
+        scrollTo(element, to, duration - 2);
+    }, 10);
+}
+</script>
 
 <!-- disqus 评论-->
 <div id="disqus_thread"></div>

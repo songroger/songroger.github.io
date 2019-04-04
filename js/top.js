@@ -19,6 +19,7 @@ $(function(){
             });  
         });  
     });  
+
 //图片变淡
 function setover(obj) {
     obj.style['opacity'] = 0.7;
