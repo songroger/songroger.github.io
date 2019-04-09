@@ -30,7 +30,10 @@ a {
   }
 }
 
-p,
+p {
+    margin-bottom: 0.7rem;
+}
+
 h1,
 h2,
 h3,
