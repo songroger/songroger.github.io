@@ -17,3 +17,17 @@
     }
 }
 
+.footnote {
+    background-color:  rgba(0,0,0,.18);
+    display:  inline-block;
+    width: 15px;
+    color:  white;
+    text-align:  center;
+    border-radius: 14px;
+    font: 700 8px/14px -apple-system,BlinkMacSystemFont,Helvetica Neue,sans-serif;
+    vertical-align: middle;
+    &:hover, &:visited {
+      color: #fff;
+      background-color:  rgba(0,0,0,.98);
+    }
+}
