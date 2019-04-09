@@ -12,12 +12,19 @@
       </h1>
     {% endif %}
 
-    <nav class="header__nav" role="navigation">      
-      <a href="{{ site.baseurl }}/archive/" class="header__link">Archive</a>
-      <a href="http://github.com/{{ site.github_username }}" class="header__link" target="_blank">Github</a>
-      <a href="http://twitter.com/{{ site.twitter_username }}" class="header__link" target="_blank">Twitter</a>
-      <a href="http://facebook.com/{{ site.facebook_username }}" class="header__link" target="_blank">Facebook</a>
-      <a href="{{ site.baseurl }}/about/" class="header__link">About</a>
+    <nav id="nav-id" class="header__nav" role="navigation">
+      <div id="burger-id" class="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+      </div>
+      <div class="navbar-menu">
+          <a href="{{ site.baseurl }}/archive/" class="header__link">Archive</a>
+          <a href="http://github.com/{{ site.github_username }}" class="header__link" target="_blank">Github</a>
+          <a href="http://twitter.com/{{ site.twitter_username }}" class="header__link" target="_blank">Twitter</a>
+          <a href="http://facebook.com/{{ site.facebook_username }}" class="header__link" target="_blank">Facebook</a>
+          <a href="{{ site.baseurl }}/about/" class="header__link">About</a>
+      </div>
     </nav>
   </header>
 
