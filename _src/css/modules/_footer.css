@@ -39,9 +39,22 @@
       display: block;
       text-align: center;
     }
+    /*&::before {
+      color: rgba(241, 228, 52, 0.89);
+      content: "宋";
+      display: block;
+      text-align: center;
+      background-color: black;
+      width: 15px;
+      position: relative;
+      float: right;
+      border-radius: 14px;
+      font: 700 8px/14px -apple-system,BlinkMacSystemFont,Helvetica Neue,sans-serif;
+      margin-left: auto;
+    }*/
     font-size: 80%;
     line-height:  1.32;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     padding: 10px 10px 0px;
     opacity: .8;
 }
