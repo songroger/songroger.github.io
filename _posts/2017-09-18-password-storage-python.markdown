@@ -66,7 +66,7 @@ MD5 和 SHA-1 已破解。虽不能还原明文，但很容易找到能生成相
 上面这几种方法都不可能得到密码的明文，就算是系统管理员也没办法。对于那些真的忘了密码的用户，网站只能提供重置密码的功能了。
 
 下面的 python 程序演示了如何使用 salt 加 hash 来单向转换密码明文
-```
+```python
 import os
 from hashlib import sha256
 from hmac import HMAC
@@ -96,7 +96,7 @@ def encrypt_password(password, salt=None):
 `hashed = encrypt_password('secret password')`
 
 下面是验证函数，它直接使用 encrypt_password 来对密码进行相同的单向转换并比较
-```
+```python
 def validate_password(hashed, input_password):
     return hashed == encrypt_password(input_password, salt=hashed[:8])
 

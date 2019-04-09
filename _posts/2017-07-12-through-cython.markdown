@@ -14,7 +14,7 @@ description:
 #### 跨语言多态的问题
 首先让我们来看问题：如果要把下面的 C++ 类 CppFoo 包装成一个 Python 类，应该怎么做？
 
-```
+```c++
 class CppFoo
     {
     public:
@@ -35,7 +35,7 @@ inline void call_fun(CppFoo* foo)
 ```
 我们可以使用 Cython 提供的 C++ 绑定机制，直接将 CppFoo 类包装成 Python 中的 foo.PyFoo
 
-```
+```c++
 # 在 Cython 中引入 C++ 类定义
 cdef extern from "CppFoo.hpp":
     cdef cppclass CppFoo:
@@ -62,7 +62,7 @@ cpdef py_call_fun(PyFoo foo):
     call_fun(foo._this)
 ```
 用 Cython 将上面的文件编译成 Python 扩展 foo 后，让我们来看看测试结果：
-```
+```python
 import foo
 
 base = foo.PyFoo()
@@ -76,7 +76,7 @@ foo.py_call_fun(base)
 我们可以看到 C++ 成员函数被 Python 正确地调用了。
 
 接着让我们更进一步：如果需要在 Python 中继承 PyFoo 并且改写 CppFoo::fun() 虚函数又会发生什么呢？
-```
+```python
 class PyDerivedFoo(foo.PyFoo):
     def fun(self):
         print 'PyDerivedFoo.fun()'
@@ -95,7 +95,7 @@ foo.py_call_fun(derived)
 如何将跨语言多态引入 Cython 中呢？谚云：额外间接层解决一切。我们可以通过增加一层中间代理来连接 C++ 和 Python 的多态机制，从而实现跨语言多态。
 
 首先让我们明确一点，C++ 的虚函数只能在 C++ 继承类中被改写。那么我们的代理类顺理成章的应该要继承 CppFoo。
-```
+```c++
 class CppFooProxy : public CppFoo
 {
 public:
@@ -103,7 +103,7 @@ public:
 };
 ```
 我们还需要改写代理类的 fun() 函数，让它转去调用 Python 对象的 fun() 方法，从而完成跨语言多态。
-```
+```c++
 void CppFooProxy::fun()
 {
     if (has_python_override_method(self, "fun")) {
@@ -119,7 +119,7 @@ void CppFooProxy::fun()
 这里还有个特殊情况没有在代码中表现出来：如果父类方法是纯虚函数，而 Python 也没有提供任何实现，那要怎么办呢？ 简单的处理方案可以直接抛出异常来报错，让纯虚函数跨界调用在运行时出错。
 
 上面这段程序里的 self 又是什么呢？ 它是一个实实在在的 Python 对象。通过 self, 我们可以在 C++ 的世界中操作彼端 Python 世界里的那个对象
-```
+```c++
 class CppFooProxy : public CppFoo
 {
 public:
@@ -145,7 +145,7 @@ private:
 };
 ```
 那么 has_python_override_method() 该如何实现呢？ 我们可以用 Python 提供的 C API 直接在 C++ 代码中实现这个功能。但这里我们选择用 Cython 来实现，然后通过 Cython 的 public api 机制暴露 C 接口再给 C++ 调用。这样的好处是我们可以很简洁地用类似 Python 语法实现这个功能。
-```
+```c++
 import types
 
 cdef public api bool has_python_override_method(
@@ -158,13 +158,13 @@ cdef public api bool has_python_override_method(
 getattr() 方法能通过名字找到对象中相应的属性对象。在尝试获得 self 中与方法名想同名称的子对象后，我们再判断这个子对象的类型是不是一个方法。
 
 下面 call_python_method_fun() 的实现就更简单了，一旦找到方法我们就直接转发调用
-```
+```c++
 cdef public api void call_python_method_fun(object self):
     method = getattr(self, method_name)
     method()
 ```
 搞清了 CppFooProxy::fun() 的实现细节后，下一步就是看如何将 Python 对象 self 塞进 CppFooProxy 中
-```
+```c++
 from cpython.ref cimport PyObject
 
 # 在 Cython 中引入 C++ 类 CppFoo 的定义
