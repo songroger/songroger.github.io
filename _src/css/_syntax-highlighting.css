@@ -140,6 +140,10 @@ code {
     color: #008080;
   } /* Name.Attribute */
 
+  .n {
+    color: #55827f;
+  }
+
   .nb {
     color: #0086b3;
   } /* Name.Builtin */

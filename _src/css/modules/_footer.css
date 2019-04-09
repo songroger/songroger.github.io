@@ -31,3 +31,17 @@
       background-color:  rgba(0,0,0,.98);
     }
 }
+
+.footnotes {
+    &::before {
+      color: rgba(0,0,0,.5);
+      content: "* * *";
+      display: block;
+      text-align: center;
+    }
+    font-size: 80%;
+    line-height:  1.32;
+    margin-top: 20px;
+    padding: 10px 10px 0px;
+    opacity: .8;
+}
