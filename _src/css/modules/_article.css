@@ -26,8 +26,11 @@
       text-decoration: none;
     }
   }
-
 }
+
+.article__excerpt {
+            color: #999;
+        }
 
 .article__cover_thumbnail {
     display: -webkit-box;
