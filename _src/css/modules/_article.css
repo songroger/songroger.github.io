@@ -86,7 +86,6 @@
     }
     .article_cover_desc {
         position: relative;
-        color: var(--color-desc);
         width: 100%;
         z-index: 2;
         padding: 120px 40px 40px;
@@ -95,6 +94,9 @@
         transition: background-color .2s ease;
         &:hover {
             background-color: rgba(0,0,0,.68);
+        }
+        .article__excerpt {
+            color: var(--color-desc);
         }
     }
   }
