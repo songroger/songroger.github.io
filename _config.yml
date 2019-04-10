@@ -47,8 +47,11 @@ defaults:
 kramdown:
   input: GFM
 
-gems: ['jekyll-paginate']
+# gems: ['jekyll-paginate']
 
 # Pagination
 paginate: 7
 paginate_path: /archive/page:num
+
+plugins:
+    - jekyll-paginate
