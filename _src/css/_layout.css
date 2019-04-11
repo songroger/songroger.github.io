@@ -9,3 +9,11 @@
     max-width: calc(800px + 1.6rem);
   }
 }
+
+.kiana {
+    z-index: 999999;
+    position: absolute;
+    cursor: move;
+    top: 767px;
+    left: 200px;
+}
