@@ -21,48 +21,44 @@
     initX, initY, firstX, firstY;
 
     object.addEventListener('mousedown', function(e) {
+      e.preventDefault();
+      initX = this.offsetLeft;
+      initY = this.offsetTop;
+      firstX = e.pageX;
+      firstY = e.pageY;
 
-        e.preventDefault();
-        initX = this.offsetLeft;
-        initY = this.offsetTop;
-        firstX = e.pageX;
-        firstY = e.pageY;
+      object.addEventListener('mousemove', dragIt, false);
+    }, false);
 
-        this.addEventListener('mousemove', dragIt, false);
 
-        window.addEventListener('mouseup', function() {
-            object.removeEventListener('mousemove', dragIt, false);
-        }, false);
-
+    document.addEventListener('mouseup', function() {
+      object.removeEventListener('mousemove', dragIt);
     }, false);
 
     object.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      initX = this.offsetLeft;
+      initY = this.offsetTop;
+      var touch = e.touches;
+      firstX = touch[0].pageX;
+      firstY = touch[0].pageY;
 
-        e.preventDefault();
-        initX = this.offsetLeft;
-        initY = this.offsetTop;
-        var touch = e.touches;
-        firstX = touch[0].pageX;
-        firstY = touch[0].pageY;
+      object.addEventListener('touchmove', swipeIt, false);
+    }, false);
 
-        this.addEventListener('touchmove', swipeIt, false);
-
-        window.addEventListener('touchend', function(e) {
-            e.preventDefault();
-            object.removeEventListener('touchmove', swipeIt, false);
-        }, false);
-
+    document.addEventListener('touchend', function() {
+      object.removeEventListener('touchmove', swipeIt);
     }, false);
 
     function dragIt(e) {
-        this.style.left = initX+e.pageX-firstX + 'px';
-        this.style.top = initY+e.pageY-firstY + 'px';
+      object.style.left = initX + e.pageX - firstX + 'px';
+      object.style.top = initY + e.pageY - firstY + 'px';
     }
 
     function swipeIt(e) {
-        var contact = e.touches;
-        this.style.left = initX+contact[0].pageX-firstX + 'px';
-        this.style.top = initY+contact[0].pageY-firstY + 'px';
+      var contact = e.touches;
+      object.style.left = initX + contact[0].pageX - firstX + 'px';
+      object.style.top = initY + contact[0].pageY - firstY + 'px';
     }
 </script>
 <script type="text/javascript">
