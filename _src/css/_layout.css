@@ -16,4 +16,8 @@
     cursor: move;
     top: 767px;
     left: 200px;
+    img {
+      width: 60px;
+      height: 60px;
+    }
 }
