@@ -11,6 +11,7 @@
 }
 
 .kiana {
+    z-index: 3;
     position: absolute;
     cursor: move;
     top: 767px;
