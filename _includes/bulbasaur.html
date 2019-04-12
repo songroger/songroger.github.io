@@ -36,10 +36,12 @@
         firstX = touch[0].pageX;
         firstY = touch[0].pageY;
 
+        kianaImg.src = "/photos/bulbasaur.gif"
         object.addEventListener('touchmove', swipeIt, false);
     }, false);
 
     document.addEventListener('touchend', function() {
+        kianaImg.src = "/photos/Bulbasaur.png"
         object.removeEventListener('touchmove', swipeIt);
     }, false);
 
