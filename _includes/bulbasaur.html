@@ -7,6 +7,7 @@
 <script type="text/javascript">
     var object = document.getElementById('kiana-id'),
         maskLayer = document.getElementById('maskLayer'),
+        kianaImg = document.getElementById('kianaImg'),
         initX, initY, firstX, firstY;
 
     object.addEventListener('mousedown', function(e) {
@@ -16,11 +17,13 @@
         firstX = e.pageX;
         firstY = e.pageY;
 
+        kianaImg.src = "/photos/bulbasaur.gif"
         maskLayer.style.display = 'block';
         maskLayer.addEventListener('mousemove', throttleDrag, false);
     }, false);
 
     document.addEventListener('mouseup', function() {
+        kianaImg.src = "/photos/Bulbasaur.png"
         maskLayer.style.display = 'none';
         maskLayer.removeEventListener('mousemove', throttleDrag);
     }, false);
