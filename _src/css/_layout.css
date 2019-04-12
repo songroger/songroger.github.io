@@ -13,7 +13,8 @@
 .kiana {
     z-index: 3;
     position: absolute;
-    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
     top: 767px;
     left: 200px;
     img {
