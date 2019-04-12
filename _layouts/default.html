@@ -18,6 +18,7 @@
 </script>
 <script type="text/javascript">
     var object = document.getElementById('kiana-id'),
+    maskLayer = document.getElementById('maskLayer'),
     initX, initY, firstX, firstY;
 
     object.addEventListener('mousedown', function(e) {
@@ -27,12 +28,13 @@
       firstX = e.pageX;
       firstY = e.pageY;
 
-      object.addEventListener('mousemove', dragIt, false);
+      maskLayer.style.display = 'block';
+      maskLayer.addEventListener('mousemove', throttleDrag, false);
     }, false);
 
-
     document.addEventListener('mouseup', function() {
-      object.removeEventListener('mousemove', dragIt);
+      maskLayer.style.display = 'none';
+      maskLayer.removeEventListener('mousemove', throttleDrag);
     }, false);
 
     object.addEventListener('touchstart', function(e) {
@@ -59,6 +61,28 @@
       var contact = e.touches;
       object.style.left = initX + contact[0].pageX - firstX + 'px';
       object.style.top = initY + contact[0].pageY - firstY + 'px';
+    }
+    function throttleV2(fn, delay, mustRunDelay){
+        var timer = null;
+        var t_start;
+        return function(){
+            var context = this, args = arguments, t_curr = +new Date();
+            clearTimeout(timer);
+            if(!t_start){
+                t_start = t_curr;
+            }
+            if(t_curr - t_start >= mustRunDelay){
+                fn.apply(context, args);
+                t_start = t_curr;
+            }
+            else {
+                timer = setTimeout(function(){
+                    fn.apply(context, args);
+                }, delay);
+            }
+        };}
+    function throttleDrag(e) {
+        throttleV2(dragIt(e), 50, 30)
     }
 </script>
 <script type="text/javascript">
