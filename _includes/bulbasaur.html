@@ -1,6 +1,6 @@
 <div id="kiana-id" class="kiana">
     <div class="kianaImgDiv">
-        <img id="kianaImg" src="/photos/Bulbasaur.png">
+        <img id="kianaImg" src="/photos/bulbasaur.png">
     </div>
 </div>
 <div id="maskLayer"></div>
@@ -23,7 +23,7 @@
     }, false);
 
     document.addEventListener('mouseup', function() {
-        kianaImg.src = "/photos/Bulbasaur.png"
+        kianaImg.src = "/photos/bulbasaur.png"
         maskLayer.style.display = 'none';
         maskLayer.removeEventListener('mousemove', throttleDrag);
     }, false);
@@ -41,7 +41,7 @@
     }, false);
 
     document.addEventListener('touchend', function() {
-        kianaImg.src = "/photos/Bulbasaur.png"
+        kianaImg.src = "/photos/bulbasaur.png"
         object.removeEventListener('touchmove', swipeIt);
     }, false);
 
