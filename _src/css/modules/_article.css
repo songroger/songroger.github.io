@@ -18,6 +18,8 @@
   }
   .audio_active {
     animation: rotate 2s infinite linear;
+    -webkit-animation: rotate 2s infinite linear;
+    -moz-animation: rotate 2s infinite linear;
   }
 }
 
