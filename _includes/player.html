@@ -1,0 +1,8 @@
+<script type="text/javascript">
+    document.getElementById("music-img").addEventListener("click", function e() {
+      var d = document.getElementById("audio-id");
+      var e = document.getElementById("music-img");
+      if (e.classList.contains('audio_active')){d.pause();e.classList.remove('audio_active')} 
+      else {d.play();e.classList.add('audio_active')};
+    });
+</script>

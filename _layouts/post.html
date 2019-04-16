@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+{% if page.audio %}
+<div class="article-audio">
+  <img src="/assets/cd-icon.png" id="music-img">
+  <audio id="audio-id" src="{{ page.audio }}" preload="auto"></audio>
+</div>
+{% endif %}
 
 <article class="article">
   <h2 class="article__title article__title--single">{{ page.title }}</h2>
@@ -38,6 +44,9 @@ layout: default
 <p id="back-to-top"><a href="#"><img src="/img/top.png"/></a></p>
 <!-- <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script> -->
 <!-- <script src="/js/top.js"></script> -->
+
+{% include player.html %}
+
 <script type="text/javascript">
 var my_header = document.getElementById('header-id'),
     scroll_to_top = document.getElementById('back-to-top');

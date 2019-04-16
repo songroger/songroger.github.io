@@ -7,6 +7,26 @@
   padding: 0px 0 20px;
 }
 
+.article-audio {
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fffefa;
+    float: right;
+    /*border: 1px solid #ff0202;*/
+  }
+  .audio_active {
+    animation: rotate 2s infinite linear;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .article__title {
   /*margin-bottom: .8rem;*/
   /*font-size: 1.3rem;*/
