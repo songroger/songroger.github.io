@@ -7,7 +7,7 @@ keywords: life, youth
 cover: "/img/PaulGauguin.jpg"
 cover_display: True
 description: “做自己最想做的事，过自己想过的生活，求得内心安宁，怎么能叫作贱自己？做一个有名的外科医生，一年赚一万英镑，娶一位漂亮的妻子，就是成功？我想，这取决于你如何看待生活的意义。”
-audio: "http://storage.googleapis.com/muxiv-mp3/mp3%2Fnetease%2F30051730?GoogleAccessId=51201153549-compute%40developer.gserviceaccount.com&Expires=1555412139&Signature=bzp9XCWHpEhuhmrPCtyNUhfv0yswUdkV1SieS4Od30bDx87XIv6SgGjIaKm96bKwasmffGnA1mRdw3jriKXjp6aly84ev2NdvlMaTNNg2dcUH5CTWOIUCGVbmr1QfwlHRiS3EqAGbxvIkja2J4Y2wSAhekbAAtUU%2BkeFXXlNNYSx%2FxwcaJaId0ofpwZYkDP8nlaEfXY4v%2Bwc04XqXJM2ZSKOAQKtHBBI%2Fd%2BdQlIahfc1%2BO6mgsicAACXZf9NIDCW8iv3gE%2BmUioFuD%2BZW9fCi6n78OSTMcADWc3FoRG5naPEpod0j2CsoQtZ8z4gEb%2B6ZcKd7ngauqOwgjWS9hv%2F6w%3D%3D"
+audio_id: "30051730"
 ---
 
 又一年了。  

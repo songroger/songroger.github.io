@@ -6,7 +6,7 @@ categories: diary
 keywords: 清明节
 cover: "/img/sth-left.jpg"
 description: 一切都是最好的安排。
-audio: "http://storage.googleapis.com/muxiv-mp3/mp3%2Fnetease%2F517897043?GoogleAccessId=51201153549-compute%40developer.gserviceaccount.com&Expires=1555416089&Signature=JxjcF%2FikT9mcRx23RbG4CI%2BP4iZ3r2lHcxnpefTWrLvrZEcshUzi9j2JvVgCwlVx5lJXr2nhpQkNPUCQzaKDyUgeRIPDKFi%2Bc9NA5GLWQ4n1Dj8I31AqY1XsCjeHVTybl9Okeh%2Fb%2BYjdNhaRp2zaRULrphXN2DW6G9V4FvEpfSd4Urtt1vnLDXE69OJA8NSNipluHdy0Vf1%2FNoIK22AVPIqz%2FqSNakZZXY%2FUHsqrThWAD0WArhee%2BiRSTFZSEsF9FtcnkDO3%2BENF0WK1C7ak%2FAW4EeGAMHc3J620HpH6uSaNnZ1N5TNwAIMzATH3PiNkROihA0ItXz6Y9eEDW%2Brkgg%3D%3D"
+audio_id: "517897043"
 ---
 
 ---

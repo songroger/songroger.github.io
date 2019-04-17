@@ -1,8 +1,42 @@
 <script type="text/javascript">
-    document.getElementById("music-img").addEventListener("click", function e() {
-      var d = document.getElementById("audio-id");
-      var e = document.getElementById("music-img");
-      if (e.classList.contains('audio_active')){d.pause();e.classList.remove('audio_active')} 
-      else {d.play();e.classList.add('audio_active')};
+    var ela = document.getElementById("audio-id"),
+        elm = document.getElementById("music-img"),
+        mock = "https://www.easy-mock.com/mock/59643dccb6cab76bb7383dcf/api/netease/:id?id=";
+    document.getElementById("music-img").addEventListener("click", function t() {
+      if (elm.classList.contains('audio_active')){ela.pause();elm.classList.remove('audio_active')}
+      else {
+        get_audio_url(audio_play);
+        };
     });
+    function er() {
+        console.log("failed to get audio url")
+    }
+    function audio_play(e, d){
+        d.play();e.classList.add('audio_active')
+    }
+    function get_audio_url(callback) {
+        var xhr = new XMLHttpRequest;
+        var audio_id = ela.getAttribute("value");
+        var audio_url = ela.getAttribute("src");
+        if (audio_url != "") {
+            callback(elm, ela);
+        }
+        else {
+            xhr.open("GET",  mock + audio_id, !0),
+            xhr.timeout = 1e3,
+            xhr.onload= function(){
+                var url = JSON.parse(xhr.responseText)[0].url;
+                ela.setAttribute("src", url)
+                callback(elm, ela);
+            },
+            xhr.ontimeout = function() {
+                er(),
+                xhr.abort()
+            },
+            xhr.onerror = function() {
+                er()
+            },
+            xhr.send();
+        }
+    }
 </script>
