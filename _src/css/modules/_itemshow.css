@@ -68,3 +68,50 @@
     transform: rotate(360deg);
   }
 }
+
+
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes htmlSkill {
+  0% {width: 0;}
+  100% {width: 95%;}
+}
+
+@keyframes cssSkill {
+  0% {width: 0;}
+  100% {width: 90%;}
+}
+
+@keyframes jsSkill {
+  0% {width: 0;}
+  100% {width: 85%;}
+}
+
+@keyframes mvBottom {
+  0% {bottom: -150px;}
+  100% {bottom: 10px;}
+}
+
+@keyframes mvTop {
+  0% {top: -150px;}
+  100% {top: 40px;}
+}
+
+@keyframes dsTop {
+  0% {top: -150px;}
+  100% {top: 0;}
+}

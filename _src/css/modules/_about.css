@@ -1,0 +1,244 @@
+/*main {
+    background:#c5a3850d;
+    border-radius: 2%;
+}*/
+
+.about-content {
+    display: flex;
+    width: 100%;
+}
+
+@media screen and (max-width: 449px) {
+    .about-content {
+        display: block;
+        width: 100%;
+    }
+}
+
+.card {
+  position: relative;
+  /*margin: auto;*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+  background: #151515;
+  overflow: hidden;
+  .ds-top {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 300px;
+    height: 100px;
+    background: crimson;
+    animation: dsTop 1.5s;
+  }
+  .avatar-holder {
+    position: absolute;
+    margin: auto;
+    top: 40px;
+    right: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #151515,
+                inset 0 0 0 5px #000000,
+                inset 0 0 0 5px #000000,
+                inset 0 0 0 5px #000000,
+                inset 0 0 0 5px #000000,;
+    background: white;
+    overflow: hidden;
+    animation: mvTop 1.5s;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &:hover {
+        animation: rotate 5s infinite linear;
+        -webkit-animation: rotate 5s infinite linear;
+        -moz-animation: rotate 5s infinite linear;
+      }
+    }
+  .name {
+    position: absolute;
+    margin: auto;
+    top: -130px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+        &:hover {
+          text-decoration: underline;
+          color: crimson;
+      }
+    }
+    h6 {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      /*bottom: 0;*/
+      color: white;
+      width: 40px;
+    }
+  }
+  .button {
+    position: absolute;
+    margin: auto;
+    padding: 8px;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+    outline: none;
+    a {
+      padding: 5px 20px;
+      border-radius: 10px;
+      color: white;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      font-size: 10px;
+      transition: all 1s;
+      &:hover {
+        color: white;
+        background: crimson;
+      }
+    }
+  }
+  .ds-info {
+    position: absolute;
+    margin: auto;
+    top: 190px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: inherit;
+    /*height: 40px;*/
+    display: flex;
+    .pens, .projects, .posts {
+      position: relative;
+      left: -300px;
+      width: calc(250px / 3);
+      text-align: center;
+      color: white;
+      animation: fadeInMove 2s;
+      animation-fill-mode: forwards;
+      h6 {
+        /*text-transform: uppercase;*/
+        color: crimson;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .ds {
+      &:nth-of-type(2) {
+        animation-delay: .5s;
+      }
+      &:nth-of-type(1) {
+        animation-delay: 1s;
+      }
+    }
+  }
+  .ds-skill {
+    position: absolute;
+    margin: auto;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    width: 200px;
+    height: 210px;
+    animation: mvBottom 1.5s;
+    h6 {
+      margin-bottom: 5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: crimson;
+    }
+    .skill {
+      h6 {
+        font-weight: 400;
+        font-size: 8px;
+        letter-spacing: 0.05em;
+        margin: 4px 0;
+        color: white;
+      }
+      .fab {
+        color: crimson;
+        font-size: 14px;
+      }
+      .bar {
+        height: 5px;
+        background: crimson;
+        text-align: right;
+        p {
+          color: white;
+          font-size: 8px;
+          padding-top: 5px;
+          animation: fadeIn 5s;
+        }
+        &:hover {
+          background: white;
+        }
+      }
+      .bar-html {
+        width: 95%;
+        animation: htmlSkill 1s;
+        animation-delay: .4s;
+      }
+      .bar-css {
+        width: 90%;
+        animation: cssSkill 2s;
+        animation-delay: .4s;
+      }
+      .bar-js {
+        width: 85%;
+        animation: jsSkill 3s;
+        animation-delay: .4s;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 734px) {
+  .right-desc {
+    width: 60%;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 733px) and (min-width: 450px) {
+  .right-desc {
+    width: 45%;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .right-desc {
+    margin: 20px 20px 20px;
+  }
+  .card {
+    margin:auto;
+  }
+}
