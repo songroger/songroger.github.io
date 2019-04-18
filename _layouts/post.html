@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-{% if page.audio_id %}
+{% if page.audio_id or page.audio %}
 <div class="article-audio">
   <img src="/assets/cd-icon.png" id="music-img">
-  <audio id="audio-id" value="{{ page.audio_id }}" src="" preload="metadata"></audio>
+  <audio id="audio-id" value="{{ page.audio_id }}" {% if page.audio %} src={{ page.audio }} {% else %} src="" {% endif %} preload="metadata"></audio>
 </div>
 {% endif %}
 
