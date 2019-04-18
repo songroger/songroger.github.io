@@ -50,9 +50,8 @@
         var left_time = ela.duration - ela.currentTime
         var mins = Math.floor(left_time / 60);
         var secs = Math.floor(left_time % 60);
-        if (secs < 10) {
-            secs = '0' + String(secs);
-        };
+        secs = secs < 10 ? "0"+secs : secs;
+        // mins = m < 10 ? "0"+m : m;
         elc.setAttribute("data-before", mins + ":" + secs);
     }
 </script>
