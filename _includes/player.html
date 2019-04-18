@@ -47,8 +47,9 @@
         }
     }
     function get_audio_timer() {
-        var mins = Math.floor(ela.currentTime / 60);
-        var secs = Math.floor(ela.currentTime % 60);
+        var left_time = ela.duration - ela.currentTime
+        var mins = Math.floor(left_time / 60);
+        var secs = Math.floor(left_time % 60);
         if (secs < 10) {
             secs = '0' + String(secs);
         };
