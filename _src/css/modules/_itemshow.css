@@ -115,3 +115,26 @@
   0% {top: -150px;}
   100% {top: 0;}
 }
+
+@keyframes moveParticle {
+  0% {
+    top: -6px;left: -6px;
+/*    background-color: #fce4ec; */
+  }
+  25% {
+    top: -6px;left: calc(var(--particle-len) - 4px);
+/*    background-color: #f8bbd0 ; */
+  }
+  50% {
+    top: calc(var(--particle-len) - 6px);left: calc(var(--particle-len) - 6px);
+/*      background-color: #ec407a; */
+  }
+  75% {
+    top: calc(var(--particle-len) - 4px);left: -6px;
+/*    background-color: #ab47bc; */
+  }
+  100% {
+    top: -6px;left: -6px;
+/*    background-color: #6a1b9a; */
+  }
+}

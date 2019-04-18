@@ -36,6 +36,8 @@
   --color1: #1565C0;
   --color2: #999;
   --title-font: Lora,Georgia,sans-serif;
+  --particle-len: 50px;
+  --particle-color: #FC3C3C;
 }
 
 html {
