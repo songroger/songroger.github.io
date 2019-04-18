@@ -1,0 +1,356 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+
+[class*="fontawesome-"]:before {
+
+    position: absolute;
+
+    font-family: 'fontawesome', sans-serif;
+    font-size: 1em;
+    
+    color: rgba(100, 100, 100, 0.2);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    
+    -webkit-transition: all 800ms ease;
+       -moz-transition: all 800ms ease;
+        -ms-transition: all 800ms ease;
+         -o-transition: all 800ms ease;
+            transition: all 800ms ease;
+    
+    -webkit-transform: scale(1, 1.2);
+       -moz-transform: scale(1, 1.2);
+        -ms-transform: scale(1, 1.2);
+         -o-transform: scale(1, 1.2);
+            transform: scale(1, 1.2);
+
+}
+
+[class*="fontawesome-"]:hover:before  {
+    
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+
+}
+
+.fontawesome-music:before {
+    
+    position: absolute;
+    
+    width: 20px;
+    height: 20px;
+    
+    top: calc(50% - 50px);
+    left: 60%;
+    
+    margin: -10px 0 0 -8px;
+
+}
+
+.fontawesome-play:before {
+    
+    position: absolute;
+    
+    width: 20px;
+    height: 20px;
+    
+    top: 50%;
+    left: 60%;
+    
+    margin: -10px 0 0 -8px;
+        
+}
+
+.fontawesome-random:before {
+    
+    position: absolute;
+    
+    width: 20px;
+    height: 20px;
+    
+    top: calc(50% + 50px);
+    left: 60%;
+    
+    margin: -10px 0 0 -10px;
+        
+}
+
+.album-concept  {
+
+    position: relative;
+    
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    
+    /*top: 50%;
+    left: 50%;
+    
+    margin: -125px 0 0 -125px;*/
+    
+    /*overflow: hidden;*/
+    
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+         -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    
+    -webkit-perspective: 800px;
+       -moz-perspective: 800px;
+        -ms-perspective: 800px;
+         -o-perspective: 800px;
+            perspective: 800px;
+            
+}
+
+.controls {
+
+    background: #f5f5dc;
+    
+    position: absolute;
+    
+    width: 60px;
+    height: 200px;
+    
+    top: 26px;
+    left: 190px;
+    
+    /*margin: -100px 0 0 -60px;*/
+    
+    z-index: -1;
+    
+    border-radius: 5px;
+    
+}
+
+.cover, .controls {
+
+    cursor: pointer;
+
+}
+
+.cover.left {
+
+    position: absolute;
+    box-shadow: 5px 20px 25px 5px rgba(0,0,0,.2);
+    width: 125px;
+    height: 200px;
+    
+    background: url(/photos/album-cover.jpg) no-repeat;
+    background-position: 0px 0px;
+    
+    top: 50%;
+    left: calc(50% - 62.5px);
+    
+    margin: -100px 0 0 -62.5px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+.cover.right {
+
+    position: absolute;
+    box-shadow: 12px 19px 25px 5px rgba(0,0,0,.2);
+    width: 125px;
+    height: 200px;
+        
+    background: url(/photos/album-cover.jpg) no-repeat;
+    background-position: -125px 0px;
+
+    top: 50%;
+    left: calc(50% + 62.5px);
+    
+    margin: -100px 0 0 -62.5px;
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+    -webkit-transform-origin: left center;
+       -moz-transform-origin: left center;
+        -ms-transform-origin: left center;
+         -o-transform-origin: left center;
+            transform-origin: left center;
+            
+}
+
+.unfold {
+    
+    -webkit-animation: unfold 300ms ease 0s 1 normal forwards;
+       -moz-animation: unfold 300ms ease 0s 1 normal forwards;
+        -ms-animation: unfold 300ms ease 0s 1 normal forwards;
+         -o-animation: unfold 300ms ease 0s 1 normal forwards;
+            animation: unfold 300ms ease 0s 1 normal forwards;
+
+}
+
+.fold {
+    
+    -webkit-animation: fold 300ms ease 0s 1 normal forwards;
+       -moz-animation: fold 300ms ease 0s 1 normal forwards;
+        -ms-animation: fold 300ms ease 0s 1 normal forwards;
+         -o-animation: fold 300ms ease 0s 1 normal forwards;
+            animation: fold 300ms ease 0s 1 normal forwards;
+
+}
+
+
+@-webkit-keyframes unfold {
+                
+    from {
+            
+        -webkit-transform: rotateY(0deg);
+                    
+    }
+                    
+    to {
+                    
+        -webkit-transform: rotateY(-60deg);
+                
+    }
+                    
+}
+
+@-moz-keyframes unfold {
+                
+    from {
+            
+        -moz-transform: rotateY(0deg);
+                    
+    }
+                    
+    to {
+                    
+        -moz-transform: rotateY(-60deg);
+                
+    }
+                    
+}
+
+@-ms-keyframes unfold {
+                
+    from {
+            
+        -ms-transform: rotateY(0deg);
+                    
+    }
+                    
+    to {
+                    
+        -ms-transform: rotateY(-60deg);
+                
+    }
+                    
+}
+
+@-o-keyframes unfold {
+                
+    from {
+            
+        -o-transform: rotateY(0deg);
+                    
+    }
+                    
+    to {
+                    
+        -o-transform: rotateY(-60deg);
+                
+    }
+                    
+}
+
+@keyframes unfold {
+                
+    from {
+            
+        transform: rotateY(0deg);
+                    
+    }
+                    
+    to {
+                    
+        transform: rotateY(-60deg);
+                
+    }
+                    
+}
+
+@-webkit-keyframes fold {
+                
+    from {
+            
+        -webkit-transform: rotateY(-60deg);
+                    
+    }
+                    
+    to {
+                    
+        -webkit-transform: rotateY(0deg);
+                
+    }
+                    
+}
+
+@-moz-keyframes fold {
+                
+    from {
+            
+        -moz-transform: rotateY(-60deg);
+                    
+    }
+                    
+    to {
+                    
+        -moz-transform: rotateY(0deg);
+                
+    }
+                    
+}
+
+@-ms-keyframes fold {
+                
+    from {
+            
+        -ms-transform: rotateY(-60deg);
+                    
+    }
+                    
+    to {
+                    
+        -ms-transform: rotateY(0deg);
+                
+    }
+                    
+}
+
+@-o-keyframes fold {
+                
+    from {
+            
+        -o-transform: rotateY(-60deg);
+                    
+    }
+                    
+    to {
+                    
+        -o-transform: rotateY(0deg);
+                
+    }
+                    
+}
+
+@keyframes fold {
+                
+    from {
+            
+        transform: rotateY(-60deg);
+                    
+    }
+                    
+    to {
+                    
+        transform: rotateY(0deg);
+                
+    }
+                    
+}

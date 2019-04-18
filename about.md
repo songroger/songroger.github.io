@@ -50,6 +50,7 @@ I was born and raised in Hunan China. <br />
 I’m really fond of beautiful design, drawing etc.<br />
 <strong>☞<a href="/blog-again/">『Why I blog again』</a></strong></p>
 <div class="rhombusLoader"></div>
+{% include album.html %}
 </div>
 </div>
 
