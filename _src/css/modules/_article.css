@@ -8,6 +8,12 @@
 }
 
 .article-audio {
+  &::before {
+      color: rgba(0,0,0,.5);
+      content: attr(data-before);
+      display: block;
+      text-align: right;
+  }
   img {
     width: 30px;
     height: 30px;

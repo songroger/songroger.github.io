@@ -1,6 +1,7 @@
 <script type="text/javascript">
     var ela = document.getElementById("audio-id"),
         elm = document.getElementById("music-img"),
+        elc = document.getElementsByClassName("article-audio")[0],
         mock = "https://www.easy-mock.com/mock/59643dccb6cab76bb7383dcf/api/netease/:id?id=";
     elm.addEventListener("click", function t() {
       if (elm.classList.contains('audio_active')){ela.pause();elm.classList.remove('audio_active')}
@@ -9,7 +10,9 @@
         };
     });
     ela.addEventListener("ended", audio_ended);
+    ela.addEventListener("timeupdate", get_audio_timer);
     function er() {
+        elc.setAttribute("data-before", "NetworkError, TryAgain");
         console.log("failed to get audio url");
     }
     function audio_play(e, d){
@@ -42,5 +45,13 @@
             },
             xhr.send();
         }
+    }
+    function get_audio_timer() {
+        var mins = Math.floor(ela.currentTime / 60);
+        var secs = Math.floor(ela.currentTime % 60);
+        if (secs < 10) {
+            secs = '0' + String(secs);
+        };
+        elc.setAttribute("data-before", mins + ":" + secs);
     }
 </script>
