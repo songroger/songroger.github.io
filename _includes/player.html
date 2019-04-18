@@ -2,17 +2,21 @@
     var ela = document.getElementById("audio-id"),
         elm = document.getElementById("music-img"),
         mock = "https://www.easy-mock.com/mock/59643dccb6cab76bb7383dcf/api/netease/:id?id=";
-    document.getElementById("music-img").addEventListener("click", function t() {
+    elm.addEventListener("click", function t() {
       if (elm.classList.contains('audio_active')){ela.pause();elm.classList.remove('audio_active')}
       else {
         get_audio_url(audio_play);
         };
     });
+    ela.addEventListener("ended", audio_ended);
     function er() {
-        console.log("failed to get audio url")
+        console.log("failed to get audio url");
     }
     function audio_play(e, d){
         d.play();e.classList.add('audio_active')
+    }
+    function audio_ended() {
+        elm.classList.remove('audio_active');
     }
     function get_audio_url(callback) {
         var xhr = new XMLHttpRequest;
