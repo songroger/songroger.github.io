@@ -3,9 +3,10 @@
     <div class="cover right"></div>
     <div class="controls">
         <span class="fontawesome-music"></span>
-        <span class="fontawesome-play"></span>
+        <span id="start-id" class="fontawesome-play"></span>
         <span class="fontawesome-random"></span>
     </div>
+    <audio id="audio-id" src="{{ site.about_bgm }}" preload="metadata"></audio>
 </div>
 
 <script type="text/javascript">
@@ -15,10 +16,15 @@
 
         function handle() {
 
-            var cover = document.querySelectorAll('.cover');
+            var cover = document.querySelectorAll('.cover'),
+                ela = document.getElementById("audio-id"),
+                els = document.getElementById("start-id");
 
             // Unfold once it's ready
             document.querySelector('.cover.right').classList.add('unfold');
+            els.addEventListener("click", function t() {
+                ela.play();
+            });
 
             [].slice.call(document.querySelectorAll('.cover')).forEach(function (cover, index) {
 
@@ -33,6 +39,7 @@
 
                         document.querySelector('.cover.right').classList.add('fold');
                         document.querySelector('.cover.right').classList.remove('unfold');
+                        ela.pause();
 
                     }
 
@@ -41,6 +48,7 @@
 
                         document.querySelector('.cover.right').classList.add('unfold');
                         document.querySelector('.cover.right').classList.remove('fold');
+                        ela.play();
 
                     }
 
