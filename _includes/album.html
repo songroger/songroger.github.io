@@ -1,4 +1,9 @@
 <div class="album-concept">
+    <div style="
+        font-size: 0.7rem;
+        text-align: center;
+        margin-left: 5px;
+    " class="timer-id">00:00</div>
     <div class="cover left"></div>
     <div class="cover right"></div>
     <div class="controls">
@@ -18,7 +23,8 @@
 
             var cover = document.querySelectorAll('.cover'),
                 ela = document.getElementById("audio-id"),
-                els = document.getElementById("start-id");
+                els = document.getElementById("start-id"),
+                elt = document.getElementById("timer-id");
 
             // Unfold once it's ready
             document.querySelector('.cover.right').classList.add('unfold');
@@ -28,7 +34,8 @@
                 audio_pause();
                 };
             });
-            els.addEventListener("ended", audio_pause);
+            ela.addEventListener("ended", audio_pause);
+            ela.addEventListener("timeupdate", get_timer);
             function audio_play() {
                 ela.play();
                 els.classList.remove('fontawesome-play');
@@ -38,6 +45,14 @@
                 ela.pause();
                 els.classList.remove('fontawesome-pause');
                 els.classList.add('fontawesome-play');
+            }
+            function get_timer(){
+                var left_time = ela.duration != ela.duration ? 0: ela.duration - ela.currentTime
+                var mins = Math.floor(left_time / 60);
+                var secs = Math.floor(left_time % 60);
+                secs = secs < 10 ? "0"+secs : secs;
+                elt.innerHTML = mins + ":" + secs;
+
             }
 
             [].slice.call(document.querySelectorAll('.cover')).forEach(function (cover, index) {
