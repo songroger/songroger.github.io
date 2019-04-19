@@ -28,6 +28,7 @@
                 audio_pause();
                 };
             });
+            els.addEventListener("ended", audio_pause);
             function audio_play() {
                 ela.play();
                 els.classList.remove('fontawesome-play');
