@@ -23,8 +23,21 @@
             // Unfold once it's ready
             document.querySelector('.cover.right').classList.add('unfold');
             els.addEventListener("click", function t() {
-                ela.play();
+              if (els.classList.contains('fontawesome-play')){audio_play();}
+              else {
+                audio_pause();
+                };
             });
+            function audio_play() {
+                ela.play();
+                els.classList.remove('fontawesome-play');
+                els.classList.add('fontawesome-pause');
+            }
+            function audio_pause() {
+                ela.pause();
+                els.classList.remove('fontawesome-pause');
+                els.classList.add('fontawesome-play');
+            }
 
             [].slice.call(document.querySelectorAll('.cover')).forEach(function (cover, index) {
 
@@ -39,7 +52,7 @@
 
                         document.querySelector('.cover.right').classList.add('fold');
                         document.querySelector('.cover.right').classList.remove('unfold');
-                        ela.pause();
+                        audio_pause();
 
                     }
 
@@ -48,7 +61,7 @@
 
                         document.querySelector('.cover.right').classList.add('unfold');
                         document.querySelector('.cover.right').classList.remove('fold');
-                        ela.play();
+                        audio_play();
 
                     }
 

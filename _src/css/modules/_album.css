@@ -45,7 +45,8 @@
 
 }
 
-.fontawesome-play:before {
+.fontawesome-play:before,
+.fontawesome-pause:before {
     
     position: absolute;
     
