@@ -7,7 +7,7 @@
         </div>
         <span class="fontawesome-music"></span>
         <span id="start-id" class="fontawesome-play"></span>
-        <span class="fontawesome-random"></span>
+        <span id="next-id" class="fontawesome-step-forward"></span>
     </div>
     <audio id="audio-id" src="{{ site.about_bgm }}" preload="metadata"></audio>
 </div>
@@ -23,6 +23,7 @@
                 ela = document.getElementById("audio-id"),
                 els = document.getElementById("start-id"),
                 elt = document.getElementById("timer-id");
+                eln = document.getElementById("next-id");
 
             // Unfold once it's ready
             document.querySelector('.cover.right').classList.add('unfold');
@@ -32,8 +33,21 @@
                 audio_pause();
                 };
             });
+            eln.addEventListener("click", function t() {
+                get_local_next();
+                audio_play();
+            });
             ela.addEventListener("ended", audio_pause);
             ela.addEventListener("timeupdate", get_timer);
+            function get_local_next() {
+                var next_url = JSON.parse(window.localStorage.getItem('playlist'))[1];
+                ela.setAttribute("src", next_url);
+                window.localStorage.setItem('current', next_url);
+            }
+            function set_playlist() {
+                var play_list = []
+                window.localStorage.setItem('playlist', JSON.stringify(play_list));
+            }
             function audio_play() {
                 ela.play();
                 els.classList.remove('fontawesome-play');

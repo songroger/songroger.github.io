@@ -60,6 +60,7 @@
         
 }
 
+.fontawesome-step-forward:before,
 .fontawesome-random:before {
     
     position: absolute;
@@ -70,7 +71,7 @@
     top: calc(50% + 50px);
     left: 60%;
     
-    margin: -10px 0 0 -10px;
+    margin: -10px 0 0 -8px;
         
 }
 
