@@ -22,13 +22,14 @@
             var cover = document.querySelectorAll('.cover'),
                 ela = document.getElementById("audio-id"),
                 els = document.getElementById("start-id"),
-                elt = document.getElementById("timer-id");
-                eln = document.getElementById("next-id");
+                elt = document.getElementById("timer-id"),
+                eln = document.getElementById("next-id"),
+                playlist = JSON.parse(window.localStorage.getItem('playlist'));
 
             // Unfold once it's ready
             document.querySelector('.cover.right').classList.add('unfold');
             els.addEventListener("click", function t() {
-              if (els.classList.contains('fontawesome-play')){audio_play();}
+              if (els.classList.contains('fontawesome-play')){audio_play();set_playlist();}
               else {
                 audio_pause();
                 };
@@ -40,13 +41,29 @@
             ela.addEventListener("ended", audio_pause);
             ela.addEventListener("timeupdate", get_timer);
             function get_local_next() {
-                var next_url = JSON.parse(window.localStorage.getItem('playlist'))[1];
-                ela.setAttribute("src", next_url);
-                window.localStorage.setItem('current', next_url);
+                if (playlist != null ) {
+                    var m_num = playlist.length;
+                    var index = Math.floor(Math.random() * m_num);
+                    var next_url = playlist[index];
+                    ela.setAttribute("src", next_url);
+                    window.localStorage.setItem('current', next_url);
+                }
+                else {
+                    set_playlist();
+                };
             }
             function set_playlist() {
-                var play_list = []
-                window.localStorage.setItem('playlist', JSON.stringify(play_list));
+                var item = ela.getAttribute("src");
+                if (playlist != null ) {
+                    playlist.indexOf(item) === -1? playlist.push(item):null;
+                    window.localStorage.setItem('current', item);
+                    window.localStorage.setItem('playlist', JSON.stringify(playlist));
+                }
+                else {
+                    playlist = [item];
+                    window.localStorage.setItem('current', item);
+                    window.localStorage.setItem('playlist', JSON.stringify(playlist));
+                }
             }
             function audio_play() {
                 ela.play();

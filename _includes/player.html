@@ -2,11 +2,12 @@
     var ela = document.getElementById("audio-id"),
         elm = document.getElementById("music-img"),
         elc = document.getElementsByClassName("article-audio")[0],
-        mock = "https://www.easy-mock.com/mock/59643dccb6cab76bb7383dcf/api/netease/:id?id=";
+        mock = "https://www.easy-mock.com/mock/59643dccb6cab76bb7383dcf/api/netease/:id?id=",
+        playlist = JSON.parse(window.localStorage.getItem('playlist'));
     elm.addEventListener("click", function t() {
       if (elm.classList.contains('audio_active')){ela.pause();elm.classList.remove('audio_active')}
       else {
-        get_audio_url(audio_play);
+        get_audio_url(audio_play, set_playlist);
         };
     });
     ela.addEventListener("ended", audio_ended);
@@ -21,12 +22,25 @@
     function audio_ended() {
         elm.classList.remove('audio_active');
     }
-    function get_audio_url(callback) {
+    function set_playlist() {
+        var item = ela.getAttribute("src");
+        if (playlist != null ) {
+            item && playlist.indexOf(item) === -1? playlist.push(item):null;
+            window.localStorage.setItem('playlist', JSON.stringify(playlist));
+        }
+        else {
+            if (item != ""){
+                playlist = [item];
+                window.localStorage.setItem('playlist', JSON.stringify(playlist));
+            }
+        }
+    }
+    function get_audio_url(call1, call2) {
         var xhr = new XMLHttpRequest;
         var audio_id = ela.getAttribute("value");
         var audio_url = ela.getAttribute("src");
         if (audio_url != "") {
-            callback(elm, ela);
+            call1(elm, ela);
         }
         else {
             xhr.open("GET",  mock + audio_id, !0),
@@ -34,7 +48,8 @@
             xhr.onload= function(){
                 var url = JSON.parse(xhr.responseText)[0].url;
                 ela.setAttribute("src", url)
-                callback(elm, ela);
+                call1(elm, ela);
+                call2();
             },
             xhr.ontimeout = function() {
                 er(),
