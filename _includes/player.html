@@ -3,7 +3,7 @@
         elm = document.getElementById("music-img"),
         elc = document.getElementsByClassName("article-audio")[0],
         mock = "https://www.easy-mock.com/mock/59643dccb6cab76bb7383dcf/api/netease/:id?id=",
-        playlist = JSON.parse(window.localStorage.getItem('playlist'));
+        playlist = JSON.parse(window.sessionStorage.getItem('playlist'));
     elm.addEventListener("click", function t() {
       if (elm.classList.contains('audio_active')){ela.pause();elm.classList.remove('audio_active')}
       else {
@@ -26,12 +26,12 @@
         var item = ela.getAttribute("src");
         if (playlist != null ) {
             item && playlist.indexOf(item) === -1? playlist.push(item):null;
-            window.localStorage.setItem('playlist', JSON.stringify(playlist));
+            window.sessionStorage.setItem('playlist', JSON.stringify(playlist));
         }
         else {
             if (item != ""){
                 playlist = [item];
-                window.localStorage.setItem('playlist', JSON.stringify(playlist));
+                window.sessionStorage.setItem('playlist', JSON.stringify(playlist));
             }
         }
     }
