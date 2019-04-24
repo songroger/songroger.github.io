@@ -192,12 +192,13 @@
 }
 
 #lyricer {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     font-family: Lora,Georgia,sans-serif;
     text-shadow: 0 0 1px #EEEEEE;
     color: #666666;
     overflow: hidden;
     display: none;
+    line-height: 1rem;
 }
 
 #lyricer ul {
