@@ -216,8 +216,15 @@
 }
 
 #lyricer .lyricer-current-line {
-    color: #fff;
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #ff2d95, 0 0 6px #ff2d95, 0 0 8px #ff2d95, 0 0 10px #ff2d95, 0 0 12px #ff2d95;
+    color: #ec4747;
+    text-shadow: 0 0 1px #fffc2d,
+                 0 0 2px #fffc2d,
+                 0 0 3px #fffc2d,
+                 0 0 4px #fffc2d,
+                 0 0 6px #fffc2d,
+                 0 0 8px #fffc2d,
+                 0 0 10px #fffc2d,
+                 0 0 12px #fffc2d;
 }
 
 @-webkit-keyframes unfold {
