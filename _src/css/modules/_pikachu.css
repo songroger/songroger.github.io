@@ -1,0 +1,41 @@
+svg{
+  height: 80px;
+  position: absolute;
+  transform: translate(calc(100% + 280px), -90px);
+}
+
+.fill{
+  fill-opacity:0;
+  animation: 2s filling linear forwards;
+  animation-delay: 5s;
+}
+
+.outline-fast{
+  stroke-dasharray: 250;
+  animation: 7s outlining linear;
+}
+
+.outline-slow{
+  stroke-dasharray: 250;
+  animation: 20s outlining linear;
+}
+
+.long-outline-fast{
+  stroke-dasharray: 500;
+  animation: 6s long-outlining linear;
+}
+
+@keyframes outlining{
+  0%{ stroke-dashoffset:250; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes long-outlining{
+  0%{ stroke-dashoffset: 500; }
+  100%{ stroke-dashoffset: 0; }
+}
+
+@keyframes filling{
+  0%{ fill-opacity: 0; }
+  100% { fill-opacity: 1; }
+}

@@ -52,6 +52,7 @@ I’m really fond of beautiful design, drawing etc.<br />
 <div class="rhombusLoader"></div>
 {% include album.html %}
 </div>
+<!-- {% include pikachu.html %} -->
 </div>
 
 

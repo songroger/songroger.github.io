@@ -259,6 +259,10 @@
   .album-concept {
     left: 40px;
   }
+  svg,
+  .rhombusLoader {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 733px) and (min-width: 450px) {
@@ -274,6 +278,7 @@
     top: 60px;
     position: relative;
   }
+  /*svg,*/
   .album-concept {
     display: none;
   }
@@ -289,11 +294,10 @@
   .right-desc {
     margin: 20px 20px 20px;
   }
-  .card {
-    display: none;
-    /*margin:auto;*/
-  }
-  .rhombusLoader {
+  svg,
+  .card,
+  .rhombusLoader
+   {
     display: none;
   }
 }
