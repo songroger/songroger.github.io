@@ -15,6 +15,7 @@ description: >
 keywords: songroger,github
 
 about_bgm: "https://dev.tencent.com/api/share/download/3f03e8c9-2187-454c-ba65-66e7d003a660"
+weather_api: "https://www.easy-mock.com/mock/59643dccb6cab76bb7383dcf/api/weather?city="
 
 # Contact and social media links
 twitter_username: songrogero

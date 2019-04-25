@@ -2,7 +2,7 @@
     var ela = document.getElementById("audio-id"),
         elm = document.getElementById("music-img"),
         elc = document.getElementsByClassName("article-audio")[0],
-        mock = "https://www.easy-mock.com/mock/59643dccb6cab76bb7383dcf/api/netease/:id?id=",
+        mock = "https://www.easy-mock.com/mock/59643dccb6cab76bb7383dcf/api/netease?id=",
         playlist = JSON.parse(window.sessionStorage.getItem('playlist'));
     elm.addEventListener("click", function t() {
       if (elm.classList.contains('audio_active')){ela.pause();elm.classList.remove('audio_active')}
