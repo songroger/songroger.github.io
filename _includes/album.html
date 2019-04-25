@@ -32,6 +32,7 @@
                 elt = document.getElementById("timer-id"),
                 eln = document.getElementById("next-id"),
                 ell = document.getElementById("lyric-id"),
+                ele = document.getElementById("equaliser-id"),
                 lyricer = document.getElementById("lyricer"),
                 playlist = JSON.parse(window.sessionStorage.getItem('playlist'));
 
@@ -85,11 +86,13 @@
             }
             function audio_play() {
                 ela.play();
+                ele.style.display = "block";
                 els.classList.remove('fontawesome-play');
                 els.classList.add('fontawesome-pause');
             }
             function audio_pause() {
                 ela.pause();
+                ele.style.display = "none";
                 els.classList.remove('fontawesome-pause');
                 els.classList.add('fontawesome-play');
             }

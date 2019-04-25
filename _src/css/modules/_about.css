@@ -263,6 +263,9 @@
   .rhombusLoader {
     display: none;
   }
+  .equaliser-container {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 733px) and (min-width: 450px) {
