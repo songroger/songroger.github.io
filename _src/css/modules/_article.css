@@ -4,7 +4,7 @@
   -webkit-animation: itemshow 0.9s linear;
   -moz-animation: itemshow 0.9s linear;
   border-bottom: 1px solid rgba(0,0,0,.04);
-  padding: 0px 0 20px;
+  padding: 20px 0 20px;
 }
 
 .article-audio {
@@ -13,6 +13,7 @@
       content: attr(data-before);
       display: block;
       text-align: right;
+      padding-top: 10px;
   }
   img {
     width: 30px;
@@ -20,6 +21,7 @@
     border-radius: 50%;
     background-color: #fffefa;
     float: right;
+    margin-top: 5px;
     /*border: 1px solid #ff0202;*/
   }
   .audio_active {
