@@ -1,13 +1,17 @@
+main {
+    box-shadow: 0 10px 25px #ddd;
+}
 .col {
-  max-width: calc(700px + 1.6rem);
-  margin: 0 auto;
-  padding: 0 .8rem;
+    max-width: calc(700px + 1.6rem);
+    margin: 0 auto;
+    padding: 0 .8rem;
 }
 
-@media screen and (min-width: 1440px) {
-  .col {
-    max-width: calc(800px + 1.6rem);
-  }
+@media screen and (min-width:1440px) {
+    .col {
+        max-width: calc(800px + 1.6rem);
+    }
+
 }
 
 .kiana {
@@ -17,10 +21,12 @@
     cursor: grab;
     top: 767px;
     left: 200px;
+
     img {
-      width: 60px;
-      height: 60px;
+        width: 60px;
+        height: 60px;
     }
+
 }
 
 #maskLayer {

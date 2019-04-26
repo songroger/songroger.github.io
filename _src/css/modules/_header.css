@@ -5,6 +5,7 @@
   margin-bottom: 2rem;
   box-shadow: 0 1px 0 0 var(--color-border);
   border-top: 2px solid #44a5ff;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 734px) {
