@@ -1,5 +1,5 @@
 .article {
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
   animation: itemshow 0.9s linear;
   -webkit-animation: itemshow 0.9s linear;
   -moz-animation: itemshow 0.9s linear;
