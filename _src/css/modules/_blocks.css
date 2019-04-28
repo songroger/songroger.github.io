@@ -14,6 +14,8 @@
 }
 
 .blocks__item {
+  width: 33.33%;
+  text-align: center;
   a {
     text-decoration: none;
     color: var(--color2);
