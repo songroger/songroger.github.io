@@ -3,7 +3,7 @@
 
 [class*="fontawesome-"]:before {
 
-    position: absolute;
+    /*position: absolute;*/
 
     font-family: 'fontawesome', sans-serif;
     font-size: 1em;
