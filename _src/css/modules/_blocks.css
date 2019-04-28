@@ -19,12 +19,13 @@
   a {
     text-decoration: none;
     color: var(--color2);
+    opacity: 0.6;
     border: 3px solid rgba(0,0,0,0.1);
     border-radius: 20px;
     padding: 1px 15px;
     font-family: Georgia,sans-serif;
     &:hover {
-      color: var(--color-text);
+      opacity: 1;
       border-color: var(--color2);
       transition: all .5s ease-in;
     }
