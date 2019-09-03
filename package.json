@@ -28,5 +28,8 @@
     "postcss-custom-properties": "^5.0.0",
     "postcss-import": "^8.1.0",
     "postcss-nested": "^1.0.0"
+  },
+  "dependencies": {
+    "natives": "^1.1.6"
   }
 }
