@@ -71,3 +71,4 @@ print(a3 is a4)  # --> False
 More:
 
 1. [creating-a-singleton-in-python](https://stackoverflow.com/questions/6760685/creating-a-singleton-in-python)
+2. [__init__、__new__、__call__ 方法](https://foofish.net/magic-method.html)
