@@ -68,4 +68,6 @@ print(a4.a)
 print(a3 is a4)  # --> False
 ```
 
-[creating-a-singleton-in-python](https://stackoverflow.com/questions/6760685/creating-a-singleton-in-python)
+More:
+
+1. [creating-a-singleton-in-python](https://stackoverflow.com/questions/6760685/creating-a-singleton-in-python)
