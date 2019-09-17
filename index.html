@@ -2,7 +2,7 @@
 layout: default
 ---
   <!-- article -->
-  {% for post in site.posts limit:10 %}
+  {% for post in site.tags.recommend %}
     <article class="article">
       <h2 class="article__title">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

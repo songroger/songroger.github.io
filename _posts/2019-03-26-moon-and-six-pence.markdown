@@ -3,6 +3,7 @@ layout: post
 title:  "一点笔记"
 date:   2019-03-26 21:10:14 +0000
 categories: diary
+tags: recommend
 keywords: life, youth
 cover: "/img/PaulGauguin.jpg"
 cover_display: True

@@ -3,6 +3,7 @@ layout: post
 title:  "关于赏画"
 date:   2017-03-17 10:52:14 +0000
 categories: self words
+tags: recommend
 tail: <a href="http://www.nationalgallery.org.uk/paintings/explore-the-paintings/30-highlight-paintings">来看看[National-gallery]</a>
 description: "看姑娘是姑娘，看姑娘不是姑娘，看姑娘还是姑娘"
 ---

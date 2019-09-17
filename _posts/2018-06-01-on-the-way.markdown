@@ -3,6 +3,7 @@ layout: post
 title:  "On the way"
 date:   2018-06-01 22:40:15 +0000
 categories: diary
+tags: recommend
 keywords: youth
 cover: "/img/on_cover15.jpg"
 cover_display: True

@@ -3,6 +3,7 @@ layout: post
 title:  "Understand Flask (一)"
 date:   2019-08-10 09:15:39 +0000
 categories: code
+tags: recommend
 tail: ""
 description: "<em>how</em> Flask and Werkzeug do what they do with these context locals."
 ---

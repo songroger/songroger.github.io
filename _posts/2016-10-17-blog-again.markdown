@@ -3,6 +3,7 @@ layout: post
 title:  "Reasons I blog again"
 date:   2016-10-17 22:13:17 +0000
 categories: self words
+tags: recommend
 cover: "/img/84236538ea2215f972d7d7f4386762bc.jpg"
 tail: "Drafted on the road"
 description: 「Why I rebuild a blog?」
