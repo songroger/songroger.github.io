@@ -151,7 +151,7 @@ class SomeClass:
 
 JavaScript 示例：
 
-``` javascript
+```javascript
 /**
 * nth element in the fibonacci series.
 * @param n >= 0
