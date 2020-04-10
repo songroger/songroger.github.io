@@ -15,27 +15,9 @@ gulp.task('jekyll', done => {
 });
 
 // Rebuild and refresh project
-gulp.task('reload', ['jekyll'], () => {
+gulp.task('reload', gulp.series('jekyll', () => {
   bs.reload();
-});
-
-// Start BrowserSync server and serve _site directory
-gulp.task('browser-sync', ['styles', 'jekyll'], () => {
-  bs({
-    ui: false,
-    ghostMode: {
-      clicks: true,
-      forms: false,
-      scroll: true
-    },
-    logPrefix: 'songroger',
-    notify: false,
-    // port: 4000,
-    server: {
-      baseDir: '_site'
-    }
-  });
-});
+}));
 
 // Process css, autoprefix, minify
 gulp.task('styles', () => {
@@ -63,9 +45,27 @@ gulp.task('styles', () => {
 
 // Watch sass and all html posts
 gulp.task('watch', () => {
-  gulp.watch('_src/css/**/*.css', ['styles', 'reload']);
-  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', '*.md'], ['reload']);
+  gulp.watch('_src/css/**/*.css', gulp.series('styles', 'reload'));
+  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', '*.md'], gulp.series('reload'));
 });
 
+// Start BrowserSync server and serve _site directory
+gulp.task('browser-sync', gulp.series('styles', 'jekyll', () => {
+  bs({
+    ui: false,
+    ghostMode: {
+      clicks: true,
+      forms: false,
+      scroll: true
+    },
+    logPrefix: 'songroger',
+    notify: false,
+    // port: 4000,
+    server: {
+      baseDir: '_site'
+    }
+  });
+}));
+
 // default task
-gulp.task('default', ['styles', 'watch']);
+gulp.task('default', gulp.series('styles', 'watch'));
