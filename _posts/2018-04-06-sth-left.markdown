@@ -7,7 +7,7 @@ tags: recommend
 keywords: 清明节
 cover: "/img/sth-left.jpg"
 description: 一切都是最好的安排。
-audio_id: "517897043"
+audio: "http://m10.music.126.net/20200410210321/6482afba7a36c099f36f66a0cb525deb/ymusic/443d/04ff/4842/78c1c382607a658e123124b30be32604.mp3"
 ---
 
 ---
