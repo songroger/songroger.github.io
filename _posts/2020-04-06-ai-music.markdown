@@ -4,6 +4,7 @@ title:  "自动编曲软件可以做到什么程度了"
 date:   2020-04-06 09:20:39 +0000
 categories: diary
 tail: <a href="https://mp.weixin.qq.com/s?__biz=MzA3NzUyODgwNQ==&mid=2648953700&idx=1&sn=dbf4595bc71ea7669724c98393bae93d" class="post-tags">wechat</a>
+audio: "https://wsaudiobssdlbig.kugou.com/2004102008/xmAR47vtDgyCjKe0k_-wpg/1586606914/bss/extname/wsaudio/a8aad1aef1413035b45bfbdb0d166b35.mp3"
 description: "愿你出走半生，归来仍是少年"
 ---
 
