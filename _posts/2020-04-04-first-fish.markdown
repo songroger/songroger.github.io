@@ -5,7 +5,6 @@ date:   2020-04-04 13:50:39 +0000
 categories: diary
 tags: recommend
 cover: "/img/on_cover16.jpg"
-cover_display: True
 tail: ""
 description: "所谓「学霸」，真的是'学什么都可以称霸'"
 ---
