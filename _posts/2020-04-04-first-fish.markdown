@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "别惹「学霸」"
+title:  "别「惹」学霸"
 date:   2020-04-04 13:50:39 +0000
 categories: diary
 tags: recommend
