@@ -6,7 +6,6 @@ categories: diary
 tags: recommend
 keywords: youth
 cover: "/img/on_cover6.jpg"
-cover_display: True
 description: 无力改变世界，愿世界更美好。
 ---
 
