@@ -3,6 +3,7 @@ layout: post
 title:  "python 单例模式"
 date:   2019-02-12 12:25:10 +0000
 categories: code
+tags: recommend
 tail: ""
 description:
 ---
