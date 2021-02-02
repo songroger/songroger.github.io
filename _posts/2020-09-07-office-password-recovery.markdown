@@ -22,8 +22,6 @@ Example commands for hashcat:
 `hashcat -a 3 -m 9600 hash.txt test.hcmask --username -o cracked_pass.txt --force --self-test-disable`
 
 
-[^footnote1]:
-[john](/img/john.py)
+[^footnote1]:[john](/img/john.py)
 
-[^footnote2]:
-[hashcat](https://github.com/hashcat/hashcat)
+[^footnote2]:[hashcat](https://github.com/hashcat/hashcat)
