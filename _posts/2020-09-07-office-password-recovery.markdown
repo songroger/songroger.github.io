@@ -5,13 +5,13 @@ date:   2020-09-07 20:20:39 +0000
 categories: code
 ---
 
-1. Hash file
+1.Hash file
 
 Use `john`[^footnote1] to get the hash file.
 
 `python john.py 2020.docx >hash.txt`
 
-2. Hashcat[^footnote2] to crack the password
+2.Hashcat[^footnote2] to crack the password
 
 Example commands for hashcat:
 
