@@ -19,7 +19,7 @@
   "homepage": "https://songroger.github.io",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
-    "browser-sync": "2.12.12",
+    "browser-sync": "2.27.11",
     "gulp": "~4.0",
     "gulp-cssnano": "^2.1.1",
     "gulp-postcss": "^6.1.0",
