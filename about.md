@@ -45,7 +45,7 @@ title: About
 </div>
 <div class="right-desc">
     <p>Hi there,</p>
-<p>My name is Luozhan.Song, usually I use “songroger” as my ID everywhere.<br />
+<p>My name is Roger, usually I use “songroger” as my ID everywhere.<br />
 I was born and raised in Hunan China. <br />
 I’m really fond of beautiful design, drawing etc.<br />
 <strong>☞<a href="/blog-again/">『Why I blog again』</a></strong></p>
