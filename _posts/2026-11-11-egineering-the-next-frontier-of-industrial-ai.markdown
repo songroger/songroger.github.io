@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "TOPIC: The Industrial Decision Gap: Engineering the Next Frontier of Industrial AI"
+title:  "Engineering the Next Frontier of Industrial AI"
 date:   2026-11-11 20:20:39 +0000
 tags: recommend
 categories: code
 cover: "/img/adipec.jpg"
 description: 关于构建工业ai的探索
 ---
-
 
 ### Conference
 
