@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Engineering the Next Frontier of Industrial AI"
-date:   2026-11-11 20:20:39 +0000
+date:   2026-11-11 08:20:39 +0000
 tags: recommend
 categories: code
 cover: "/img/adipec.jpg"
